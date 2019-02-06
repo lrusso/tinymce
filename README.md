@@ -3,7 +3,7 @@
 TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
 Added | Language Spanish | Complete translation available.
-Added | Plugin ContextMenu | Table properties in the context menu.
+Added | Plugin ContextMenu | Table properties item in the context menu.
 Added | Plugin Spellchecker | (No suggestions) item when there are no suggestions.
 Bugfix 1 | Plugin Spellchecker | Hides the suggestions when the spellchecker is disabled.
 Bugfix 2 | Plugin Spellchecker | Prevents to move arround the document while spellchecking.
