@@ -2,12 +2,12 @@
 
 Version 4.9.4 - Personal version with several updates and bugfixes
 
-TYPE | PLUGIN | DETAILS
+TYPE | FILE | DETAILS
 --- | --- | --- |
-Update | Spellchecker | Added a (No suggestions) over the separator.
-Bugfix | Spellchecker | Prevents the user to move arround the document while spellchecking.
-Bugfix | Spellchecker | Prevents that marked words remains marked when the user change the language.
-Bugfix | Spellchecker | Hides the suggestions menu when the spellecker is disabled.
+Update | Plugin Spellchecker | Added a (No suggestions) over the separator.
+Bugfix | Plugin Spellchecker | Prevents the user to move arround the document while spellchecking.
+Bugfix | Plugin Spellchecker | Prevents that marked words remains marked when the user change the language.
+Bugfix | Plugin Spellchecker | Hides the suggestions menu when the spellecker is disabled.
 Bugfix | Theme Modern | Prevents that the editor changes the viewport in mobile devices.
 
 
