@@ -3,7 +3,7 @@
 ## TinyMCE 4.9.4 - Personal version with several updates and bugfixes.
 
 TYPE | ELEMENT | DETAILS
---- | --- | --- |
+:---: | :---: | --- |
 Added | Spellchecker | (No suggestions) item when there are no suggestions available.
 Bugfix | Spellchecker | Prevents the user to move arround the document while spellchecking.
 Bugfix | Spellchecker | Prevents that marked words remains marked when the user change the language.
