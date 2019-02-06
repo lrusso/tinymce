@@ -16,4 +16,8 @@ Bugfix 5: Fixed when the spellchecking is disabled, now it hides the suggestions
 
 ## Theme modern update
 
-Bugfix 1: Added a patch that prevents that the editor changes the viewport in mobile devices.
+Bugfix: Added a patch that prevents that the editor changes the viewport in mobile devices.
+
+## Plugin table update
+
+Bugfix: Added a patch that prevents that the table width goes to 0 when adding a column and there is no width data available.
