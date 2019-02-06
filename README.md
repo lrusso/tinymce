@@ -2,7 +2,7 @@
 
 Version 4.9.4 - Personal version with several updates and bugfixes
 
-## Spellchecker updates
+## Plugin Spellchecker updates
 
 Bugfix 1: Added a (No suggestions) over the separator.
 
@@ -13,3 +13,7 @@ Bugfix 3: Fixed when using several languages in the spellchecker, you will see t
 Bugfix 4: Fixed when the spellchecking process begins, now it hides the language menu.
 
 Bugfix 5: Fixed when the spellchecking is disabled, now it hides the suggestions menu.
+
+## Theme modern update
+
+Bugfix 1: Added a patch that prevents that the editor changes the viewport in mobile devices.
