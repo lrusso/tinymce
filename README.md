@@ -8,6 +8,7 @@ Bugfix | Plugin Spellchecker | Prevents to move arround the document while spell
 Bugfix | Plugin Spellchecker | Prevents words remains marked when the user change the language.
 Bugfix | Plugin Table | Prevents a table width to change when adding a column without width data.
 Bugfix | Theme Modern | Prevents the editor to change the viewport in mobile devices.
+Bugfix | Core | Prevents losing the breaklines when copying and pasting a text.
 Added | Language Spanish | Complete translation available.
 
 ## Spellchecker example
