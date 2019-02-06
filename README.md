@@ -10,7 +10,7 @@ Bugfix | Spellchecker | Prevents that marked words remains marked when the user 
 Bugfix | Spellchecker | Hides the suggestions menu when the spellecker is disabled.
 Bugfix | Table | Prevents a table width change to 0 when adding a column and there is no width data.
 Bugfix | Theme Modern | Prevents the editor to change the viewport in mobile devices.
-Updated | Language Spanish | Complete translation available.
+Added | Language Spanish | Complete translation available.
 
 ## Spellchecker example
 
