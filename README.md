@@ -5,7 +5,7 @@ TYPE | ELEMENT | DETAILS
 Added | Plugin Spellchecker | (No suggestions) item when there are no suggestions.
 Bugfix | Plugin Spellchecker | Hides the suggestions when the spellchecker is disabled.
 Bugfix | Plugin Spellchecker | Prevents to move arround the document while spellchecking.
-Bugfix | Plugin Spellchecker | Prevents words remains marked when the user change the language.
+Bugfix | Plugin Spellchecker | Prevents words remains marked when the user changes the language.
 Bugfix | Plugin Table | Prevents a table width to change when adding a column without width data.
 Bugfix | Theme Inlite | Prevents the editor to change the viewport in mobile devices.
 Bugfix | Theme Mobile | Prevents the editor to change the viewport in mobile devices.
