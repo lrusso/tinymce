@@ -8853,7 +8853,7 @@ var table = (function () {
       });
       editor.addButton('table', {
         type: 'menubutton',
-        title: 'Table',
+        title: 'Insert/edit table',
         menu: menuItems
       });
       function cmd(command) {
