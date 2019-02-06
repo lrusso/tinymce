@@ -12,3 +12,5 @@ Bugfix | Plugin Table | Prevents a table width change to 0 when adding a column 
 Bugfix | Theme Modern | Prevents the editor to change the viewport in mobile devices.
 
 ## Spellchecker example
+
+![alt spellchecker](https://raw.githubusercontent.com/lrusso/tinymce/master/spellchecker.png)
