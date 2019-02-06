@@ -2,17 +2,12 @@
 
 Version 4.9.4 - Personal version with several updates and bugfixes
 
-## Plugin Spellchecker updates
-
-Bugfix 1: Added a (No suggestions) over the separator.
-
-Bugfix 2: Fixed when the spellchecking is working with a large document you will see the throbber, but meanwhile you can scroll up and down and move all arround the document with your keys (up/down/left/right), when you shouldn't be able to.
-
-Bugfix 3: Fixed when using several languages in the spellchecker, you will see the splitbutton that will show a dropdown menu with all the available languages. If you already activate the spellchecker and you already have all the marked words in your document with English (for example) as the selected language and then you change the language to French (for example), the marked words remains marked when it shouldn't because you select another language from the spellchecker menu.
-
-Bugfix 4: Fixed when the spellchecking process begins, now it hides the language menu.
-
-Bugfix 5: Fixed when the spellchecking is disabled, now it hides the suggestions menu.
+TYPE | PLUGIN | DETAILS
+--- | --- | --- |
+Update | Spellchecker | Added a (No suggestions) over the separator.
+Bugfix | Spellchecker | Prevents the user to move arround the document while spellchecking.
+Bugfix | Spellchecker | Prevents that marked words remains marked when the user change the language.
+Bugfix | Spellchecker | Hides the suggestions menu when the spellecker is disabled.
 
 ## Theme modern update
 
