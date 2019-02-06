@@ -9,6 +9,7 @@ Bugfix | Plugin Spellchecker | Prevents words remains marked when the user chang
 Bugfix | Plugin Table | Prevents a table width to change when adding a column without width data.
 Bugfix | Theme Modern | Prevents the editor to change the viewport in mobile devices.
 Bugfix | Core TinyMCE | Prevents losing breaklines when copying and pasting a text.
+Bugfix | TinyMCE Styles | Prevents from showing extra large fonts in mobile devices.
 Added | Language Spanish | Complete translation available.
 
 ## Spellchecker example
