@@ -1,4 +1,4 @@
-## TinyMCE 4.9.4 - Personal version with several bugfixes.
+## TinyMCE 4.9.4 - Personal version with several bugfixes and updates.
 
 TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
