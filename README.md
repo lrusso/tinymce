@@ -10,7 +10,7 @@ Bugfix | Plugin Table | Prevents a table width to change when adding a column wi
 Bugfix | Theme Inlite | Prevents the editor to change the viewport in mobile devices.
 Bugfix | Theme Mobile | Prevents the editor to change the viewport in mobile devices.
 Bugfix | Theme Modern | Prevents the editor to change the viewport in mobile devices.
-Bugfix | TinyMCE Core | Prevents losing breaklines when copying and pasting a text.
+Bugfix | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
 Bugfix | TinyMCE Styles | Prevents from showing extra large fonts in mobile devices.
 Added | Language Spanish | Complete translation available.
 
