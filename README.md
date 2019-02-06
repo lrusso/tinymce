@@ -4,7 +4,7 @@ TinyMCE 4.9.4 - Personal version with several updates and bugfixes.
 
 TYPE | ELEMENT | DETAILS
 --- | --- | --- |
-Added | Plugin Spellchecker | A (No suggestions) item when there are no suggestions available.
+Added | Plugin Spellchecker | (No suggestions) item when there are no suggestions available.
 Bugfix | Plugin Spellchecker | Prevents the user to move arround the document while spellchecking.
 Bugfix | Plugin Spellchecker | Prevents that marked words remains marked when the user change the language.
 Bugfix | Plugin Spellchecker | Hides the suggestions menu when the spellecker is disabled.
