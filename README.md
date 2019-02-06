@@ -2,7 +2,7 @@
 
 Version 4.9.4 - Personal version with several updates and bugfixes
 
-TYPE | FILE | DETAILS
+TYPE | ELEMENT | DETAILS
 --- | --- | --- |
 Update | Plugin Spellchecker | Added a (No suggestions) over the separator.
 Bugfix | Plugin Spellchecker | Prevents the user to move arround the document while spellchecking.
