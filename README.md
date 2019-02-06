@@ -10,3 +10,5 @@ Bugfix | Plugin Spellchecker | Prevents that marked words remains marked when th
 Bugfix | Plugin Spellchecker | Hides the suggestions menu when the spellecker is disabled.
 Bugfix | Plugin Table | Prevents a table width change to 0 when adding a column and there is no width data.
 Bugfix | Theme Modern | Prevents the editor to change the viewport in mobile devices.
+
+## Spellchecker example
