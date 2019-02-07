@@ -53,14 +53,14 @@ tinymce.init(
                     words: text.match(this.getWordCharPattern())
                     },
                 success: function(result)
-                {
-            success(result);
-            },
-            error: function(error, xhr)
-            {
-            failure("Spellcheck error:" + xhr.status);
+                    {
+                    success(result);
+                    },
+                error: function(error, xhr)
+                    {
+                    failure("Spellcheck error:" + xhr.status);
+                    }
+                });
             }
-        });
-    }
-});
+    });
 ```
