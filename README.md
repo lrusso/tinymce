@@ -65,6 +65,20 @@ tinymce.init(
     });
 ```
 
+## Spellchecker example request to server
+
+```
+{
+"id":"c0",
+"method":"spellcheck",
+"params":
+    {
+    "lang":"en",
+    "words":["thiz","iz","a","test"]
+    }
+}
+```
+
 ## Spellchecker example response from server
 
 ```
