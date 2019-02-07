@@ -17,6 +17,7 @@ Added | Plugin ContextMenu | Table properties item in the context menu.
 Added | Plugin Spellchecker | (No suggestions) item when there are no suggestions.
 Added | TinyMCE Style | Light gray separator between the document and the status bar.
 Added | In Demo Script | Implemented a script for uploading images into the document as base64.
+Added | In Demo Script | Implemented a script that notifies when pasting external linked images.
 Bugfix 1 | Plugin Spellchecker | Hides the suggestions when the spellchecker is disabled.
 Bugfix 2 | Plugin Spellchecker | Prevents to move arround the document while spellchecking.
 Bugfix 3 | Plugin Spellchecker | Prevents words remains marked when the user changes the language.
