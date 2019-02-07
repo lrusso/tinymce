@@ -74,7 +74,7 @@ tinymce.init(
 "params":
     {
     "lang":"en",
-    "words":["thiz","iz","a","test"]
+    "words":["this","is","a","test"]
     }
 }
 ```
