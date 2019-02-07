@@ -13,25 +13,38 @@
 							plugins: "advlist anchor autolink charmap codesample contextmenu directionality hr image imagetools insertdatetime link lists media nonbreaking pagebreak paste print save searchreplace spellchecker table template textcolor textpattern visualblocks visualchars wordcount",
 							toolbar1: "save | spellchecker | print | cut copy paste | undo redo | template image link table | charmap",
 							toolbar2: "fontselect | fontsizeselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | forecolor backcolor | bullist numlist | outdent indent | removeformat",
-							templates:
-								[
-								{ title: "Test template 1", content: "Test 1" },
-								{ title: "Test template 2", content: "Test 2" }
-								],
-							spellchecker_language: "en",
-							spellchecker_languages: "English=en,Spanish=es",
+
+							// GETTING ALL THE POSSIBLE EVENTS IN TINYMCE
 							setup:function(ed)
 								{
-								ed.on("FullscreenStateChanged", function(e)		{			});
+								ed.on("init", function (e)						{			});
 								ed.on("click", function (e)						{			});
 								ed.on("dblclick", function (e)					{			});
+								ed.on("mousedown", function (e)					{			});
+								ed.on("mouseup", function (e)					{			});
 								ed.on("mousemove", function (e)					{			});
+								ed.on("mouseenter", function (e)				{			});
+								ed.on("mouseleave", function (e)				{			});
 								ed.on("keypress", function (e)					{			});
 								ed.on("keydown", function (e)					{			});
 								ed.on("keyup", function (e)						{			});
 								ed.on("focus", function(e)						{			});
 								ed.on("blur", function(e)						{			});
+								ed.on("dirty", function (e)						{			});
+								ed.on("FullscreenStateChanged", function(e)		{			});
 								},
+
+							// SETTING THE TEMPLATES
+							templates:
+								[
+								{ title: "Test template 1", content: "Test 1" },
+								{ title: "Test template 2", content: "Test 2" }
+								],
+
+							// SETTING THE SPELLCHECKER
+							spellchecker_language: "en",
+							spellchecker_languages: "English=en,Spanish=es",
+
 							// THE FOLLOWING FUNCTION ALLOWS TO UPLOAD IMAGES INTO THE DOCUMENT AS BASE64
 							images_upload_handler: function (blobInfo, success, failure)
 								{
@@ -50,7 +63,17 @@
 									success('');
 									}
 								},
-							paste_data_images: true
+							paste_data_images: true,
+
+							// THE FOLLOWING FUNCTION ALLOWS TO NOTIFY THE USER THAT INSERTED IMAGES ARE LINKED TO OTHER WEBSITES
+							paste_preprocess: function(plugin, args)
+								{
+								var re = new RegExp(/<img[^>]* src="http.*?>/i);
+								if (re.test(args.content))
+									{
+									tinymce.activeEditor.notificationManager.open({text: 'IMPORTANT: Images were inserted in the document that are loaded from other websites and may be not available in other moment.', type: 'info', timeout: 8000});
+									}
+								}
 							}
 						);
 
