@@ -8911,7 +8911,6 @@ var table = (function () {
         }, function (targets) {
           ctrlEnable(self);
         });
-        alert('test');
       };
       var pushCell = function () {
         var self = this;
