@@ -70,6 +70,15 @@ remove_linebreaks: true,
 forced_root_block : false
 ```
 
+## Example of setting of extreme filter from external content
+
+```
+invalid_styles: 'font-family font-size',
+invalid_elements : 'h1,h2,h3,h4,h5,h6,pre,code,p,div,input,textarea,sub,sup,hr,figure,article,iframe,header,footer,section,nav,aside,form,script',
+valid_classes: '<*>SOME<*>IMPOSSIBLE<*>CLASSTYPE><*>',
+paste_merge_formats: true,
+```
+
 ## Example of setting of extreme clean formatting
 
 ```
