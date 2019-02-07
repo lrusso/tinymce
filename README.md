@@ -68,11 +68,11 @@ tinymce.init(
 ## Spellcheker example response from server
 
 ```
+{
+"words":
     {
-    "words":
-        {
-        "misspelled1": ["suggestion1", "suggestion2"],
-        "misspelled2": ["suggestion1", "suggestion2"]
-        }
+    "misspelled1": ["suggestion1", "suggestion2"],
+    "misspelled2": ["suggestion1", "suggestion2"]
     }
+}
 ```
