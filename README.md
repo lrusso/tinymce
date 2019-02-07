@@ -35,41 +35,6 @@ Bugfix 11 | TinyMCE Core | Prevents from losing breaklines when copying and past
 
 ![alt spellchecker](https://raw.githubusercontent.com/lrusso/tinymce/master/spellchecker.png)
 
-## Spellchecker example code
-
-```
-tinymce.init(
-    {
-    selector: "textarea",
-    plugins: "spellchecker",
-    menubar: "tools",
-    toolbar: "spellchecker",
-    spellchecker_language: "en",
-    spellchecker_languages: "English=en,Spanish=es",
-    spellchecker_callback: function(method, text, success, failure)
-        {
-        tinymce.util.JSONRequest.sendRPC(
-            {
-            url: "mySpellchecker.php",
-            method: "spellcheck",
-            params:
-                {
-                lang: this.getLanguage(),
-                words: text.match(this.getWordCharPattern())
-                },
-            success: function(result)
-                {
-                success(result);
-                },
-            error: function(error, xhr)
-                {
-                failure("Spellcheck error:" + xhr.status);
-                }
-            });
-        }
-    });
-```
-
 ## Spellchecker example of a request to a server
 
 ```
