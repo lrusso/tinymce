@@ -8911,6 +8911,7 @@ var table = (function () {
         }, function (targets) {
           ctrlEnable(self);
         });
+        tinyMCE.activeEditor.focus();
       };
       var pushCell = function () {
         var self = this;
