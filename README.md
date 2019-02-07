@@ -4,6 +4,7 @@ TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
 Added | Language Spanish | Complete translation.
 Added | Theme Modern | Branding banner disabled.
+Added | Plugin Table | New tables with single border as default.
 Added | Plugin ContextMenu | Table properties item in the context menu.
 Added | Plugin Spellchecker | (No suggestions) item when there are no suggestions.
 Bugfix 1 | Plugin Spellchecker | Hides the suggestions when the spellchecker is disabled.
