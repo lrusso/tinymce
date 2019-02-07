@@ -70,7 +70,7 @@ remove_linebreaks: true,
 forced_root_block : false
 ```
 
-## Example of setting of extreme filter from external content
+## Example of setting for extreme filter from external content
 
 ```
 invalid_styles: "font-family font-size",
@@ -79,7 +79,7 @@ valid_classes: "<*>SOME<*>IMPOSSIBLE<*>CLASSTYPE><*>",
 paste_merge_formats: true,
 ```
 
-## Example of setting of extreme clean formatting
+## Example of setting for extreme clean formatting
 
 ```
 formats:
