@@ -27,6 +27,40 @@ Bugfix 9 | Theme Modern | Prevents from changes in the viewport in mobile device
 Bugfix 10 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
 Bugfix 11 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
 
-## Spellchecker example
+## Spellchecker example image
 
 ![alt spellchecker](https://raw.githubusercontent.com/lrusso/tinymce/master/spellchecker.png)
+
+## Spellchecker example code
+
+```
+tinymce.init(
+    {
+    selector: "textarea",  // change this value according to your HTML
+    plugins: "spellchecker",
+    menubar: "tools",
+    toolbar: "spellchecker",
+    spellchecker_language: "en",
+        spellchecker_callback: function(method, text, success, failure)
+            {
+            tinymce.util.JSONRequest.sendRPC(
+                {
+                url: "/tinymce/spellchecker.php",
+                method: "spellcheck",
+                params:
+                    {
+                    lang: this.getLanguage(),
+                    words: text.match(this.getWordCharPattern())
+                    },
+                success: function(result)
+                {
+            success(result);
+            },
+            error: function(error, xhr)
+            {
+            failure("Spellcheck error:" + xhr.status);
+            }
+        });
+    }
+});
+```
