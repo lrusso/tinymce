@@ -75,3 +75,13 @@ formats:
         ]
     }
 ```
+
+## Example of setting for using BR instead of P
+
+```
+force_p_newlines: false,
+force_br_newlines: true,
+convert_newlines_to_brs: false,
+remove_linebreaks: true,
+forced_root_block : false
+```
