@@ -33,6 +33,7 @@ Bugfix 11 | TinyMCE Core | Prevents from losing breaklines when copying and past
 Bugfix 12 | TinyMCE Core | File/New now clears the undo/redo history.
 Bugfix 13 | TinyMCE Core | File/New now clears the dirty state.
 Bugfix 14 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
+Bugfix 15 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
 
 ## Spellchecker example image
 
