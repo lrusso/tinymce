@@ -73,9 +73,9 @@ forced_root_block : false
 ## Example of setting of extreme filter from external content
 
 ```
-invalid_styles: 'font-family font-size',
-invalid_elements : 'h1,h2,h3,h4,h5,h6,pre,code,p,div,input,textarea,sub,sup,hr,figure,article,iframe,header,footer,section,nav,aside,form,script',
-valid_classes: '<*>SOME<*>IMPOSSIBLE<*>CLASSTYPE><*>',
+invalid_styles: "font-family font-size",
+invalid_elements : "h1,h2,h3,h4,h5,h6,pre,code,p,div,input,textarea,sub,sup,hr,figure,article,iframe,header,footer,section,nav,aside,form,script",
+valid_classes: "<*>SOME<*>IMPOSSIBLE<*>CLASSTYPE><*>",
 paste_merge_formats: true,
 ```
 
@@ -86,10 +86,10 @@ formats:
     {
     removeformat:
         [
-        {selector: 'b,strong,em,i,font,u,strike', remove : 'all', split : true, expand : false, block_expand: true, deep : true},
-        {selector: 'div', remove : 'all'},
-        {selector: 'span', attributes : ['style', 'class'], remove : 'empty', split : true, expand : false, deep : true},
-        {selector: '*', attributes : ['style', 'class'], split : false, expand : false, deep : true}
+        {selector: "b,strong,em,i,font,u,strike", remove : "all", split : true, expand : false, block_expand: true, deep : true},
+        {selector: "div", remove : "all"},
+        {selector: "span", attributes : ["style", "class"], remove : "empty", split : true, expand : false, deep : true},
+        {selector: "*", attributes : ["style", "class"], split : false, expand : false, deep : true}
         ]
     }
 ```
