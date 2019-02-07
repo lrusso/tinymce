@@ -649,19 +649,6 @@ var spellchecker = (function () {
         };
       }
       editor.addButton('spellchecker', buttonArgs);
-      editor.addMenuItem('spellchecker', {
-        text: 'Spellcheck',
-        context: 'tools',
-        onclick: startSpellchecking,
-        selectable: true,
-        onPostRender: function () {
-          var self = this;
-          self.active(startedState.get());
-          editor.on('SpellcheckStart SpellcheckEnd', function () {
-            self.active(startedState.get());
-          });
-        }
-      });
     };
     var Buttons = { register: register$1 };
 
