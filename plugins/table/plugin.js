@@ -6181,7 +6181,8 @@ var table = (function () {
           rng.setStart(cursor.dom(), 0);
           rng.setEnd(cursor.dom(), 1);
           editor.selection.setRng(rng);
-          try{editor.fire('SetSelectionRange', {range: rng,forward: forward});}catch(err){}
+          editor.fire('SelectionChange');
+          editor.fire('nodeChange');
         });
       };
       var getSelectionStartCell = function () {
