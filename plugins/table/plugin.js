@@ -8804,7 +8804,7 @@ var table = (function () {
     var each$4 = global$1.each;
     var addButtons = function (editor) {
       var menuItems = [];
-      each$4('inserttable tableprops deletetable | cell row column'.split(' '), function (name) {
+      each$4('inserttable | cell row column | tableprops deletetable'.split(' '), function (name) {
         if (name === '|') {
           menuItems.push({ text: '-' });
         } else {
