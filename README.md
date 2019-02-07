@@ -64,3 +64,15 @@ tinymce.init(
         }
     });
 ```
+
+## Spellcheker example response from server
+
+```
+    {
+    "words":
+        {
+        "misspelled1": ["suggestion1", "suggestion2"],
+        "misspelled2": ["suggestion1", "suggestion2"]
+        }
+    }
+```
