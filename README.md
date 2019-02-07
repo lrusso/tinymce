@@ -65,7 +65,7 @@ tinymce.init(
     });
 ```
 
-## Spellchecker example request to server
+## Spellchecker example of a request to a server
 
 ```
 {
@@ -79,7 +79,7 @@ tinymce.init(
 }
 ```
 
-## Spellchecker example response from server
+## Spellchecker example of a response from a server
 
 ```
 {
