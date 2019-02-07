@@ -36,31 +36,31 @@ Bugfix 11 | TinyMCE Core | Prevents from losing breaklines when copying and past
 ```
 tinymce.init(
     {
-    selector: "textarea",  // change this value according to your HTML
+    selector: "textarea",
     plugins: "spellchecker",
     menubar: "tools",
     toolbar: "spellchecker",
     spellchecker_language: "en",
-        spellchecker_callback: function(method, text, success, failure)
+    spellchecker_callback: function(method, text, success, failure)
+        {
+        tinymce.util.JSONRequest.sendRPC(
             {
-            tinymce.util.JSONRequest.sendRPC(
+            url: "/tinymce/spellchecker.php",
+            method: "spellcheck",
+            params:
                 {
-                url: "/tinymce/spellchecker.php",
-                method: "spellcheck",
-                params:
-                    {
-                    lang: this.getLanguage(),
-                    words: text.match(this.getWordCharPattern())
-                    },
-                success: function(result)
-                    {
-                    success(result);
-                    },
-                error: function(error, xhr)
-                    {
-                    failure("Spellcheck error:" + xhr.status);
-                    }
-                });
-            }
+                lang: this.getLanguage(),
+                words: text.match(this.getWordCharPattern())
+                },
+            success: function(result)
+                {
+                success(result);
+                },
+            error: function(error, xhr)
+                {
+                failure("Spellcheck error:" + xhr.status);
+                }
+            });
+        }
     });
 ```
