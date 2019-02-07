@@ -9070,6 +9070,7 @@ var table = (function () {
         };
       }
       var tableProperties = {
+        separator: 'before',
         text: 'Table properties',
         context: 'table',
         onPostRender: pushTable,
@@ -9172,11 +9173,11 @@ var table = (function () {
         ]
       };
       editor.addMenuItem('inserttable', insertTable);
-      editor.addMenuItem('tableprops', tableProperties);
-      editor.addMenuItem('deletetable', deleteTable);
+      editor.addMenuItem('cell', cell);
       editor.addMenuItem('row', row);
       editor.addMenuItem('column', column);
-      editor.addMenuItem('cell', cell);
+      editor.addMenuItem('tableprops', tableProperties);
+      editor.addMenuItem('deletetable', deleteTable);
     };
     var MenuItems = { addMenuItems: addMenuItems };
 
