@@ -9,9 +9,10 @@ Bugfix 1 | Plugin Spellchecker | Hides the suggestions when the spellchecker is 
 Bugfix 2 | Plugin Spellchecker | Prevents to move arround the document while spellchecking.
 Bugfix 3 | Plugin Spellchecker | Prevents words remains marked when the user changes the language.
 Bugfix 4 | Plugin Table | Prevents a table width to change when adding a column without width data.
-Bugfix 5 | Theme Modern | Prevents from changes in the viewport in mobile devices.
-Bugfix 6 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
-Bugfix 7 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
+Bugfix 5 | Plugin TextColor | Prevents from missplacing the X value in the transparent color.
+Bugfix 6 | Theme Modern | Prevents from changes in the viewport in mobile devices.
+Bugfix 7 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
+Bugfix 8 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
 
 ## Spellchecker example
 
