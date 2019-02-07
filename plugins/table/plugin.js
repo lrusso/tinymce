@@ -6177,15 +6177,11 @@ var table = (function () {
           var cursor = Element$$1.fromText('');
           after(table, cursor);
           remove$2(table);
-          try{
-          var rng = editor.dom.createRng();
-          rng.setStart(cursor.dom(), 0);
-          rng.setEnd(cursor.dom(), 1);
-          editor.selection.setRng(rng);
-          }
-          catch(err)
-          {
-          }
+          var rng;
+          try{rng = editor.dom.createRng();}catch(err){}
+          try{rng.setStart(cursor.dom(), 0);}catch(err){}
+          try{rng.setEnd(cursor.dom(), 1);}catch(err){}
+          try{editor.selection.setRng(rng);}catch(err){}
         });
       };
       var getSelectionStartCell = function () {
