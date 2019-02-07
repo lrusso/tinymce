@@ -18707,7 +18707,14 @@
           }],
         alignleft: [
           {
-            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li,strong',
+            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li',
+            styles: { textAlign: 'left'},
+            inherit: false,
+            preview: 'font-family font-size',
+            defaultBlock: 'div'
+          },
+          {
+            selector: 'strong',
             styles: { textAlign: 'left', display:'block' },
             inherit: false,
             preview: 'font-family font-size',
@@ -18729,7 +18736,14 @@
         ],
         aligncenter: [
           {
-            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li,strong',
+            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li',
+            styles: { textAlign: 'center' },
+            inherit: false,
+            preview: 'font-family font-size',
+            defaultBlock: 'div'
+          },
+          {
+            selector: 'strong',
             styles: { textAlign: 'center', display:'block' },
             inherit: false,
             preview: 'font-family font-size',
@@ -18764,7 +18778,14 @@
         ],
         alignright: [
           {
-            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li,strong',
+            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li',
+            styles: { textAlign: 'right' },
+            inherit: false,
+            preview: 'font-family font-size',
+            defaultBlock: 'div'
+          },
+          {
+            selector: 'strong',
             styles: { textAlign: 'right', display:'block' },
             inherit: false,
             preview: 'font-family font-size',
@@ -18785,12 +18806,21 @@
           }
         ],
         alignjustify: [{
-            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li,strong',
-            styles: { textAlign: 'justify', display:'block' },
+            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li',
+            styles: { textAlign: 'justify' },
             inherit: false,
             defaultBlock: 'div',
             preview: 'font-family font-size'
-          }],
+          },
+          {
+            selector: 'strong',
+            styles: { textAlign: 'justify', display:'block' },
+            inherit: false,
+            preview: 'font-family font-size',
+            defaultBlock: 'div'
+          },
+
+          ],
         bold: [
           {
             inline: 'strong',
