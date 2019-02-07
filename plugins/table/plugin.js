@@ -4938,18 +4938,8 @@ var table = (function () {
     };
     var Direction = { directionAt: directionAt };
 
-    var defaultTableToolbar = [
-      'tableprops',
-      'tabledelete',
-      '|',
-      'tableinsertrowbefore',
-      'tableinsertrowafter',
-      'tabledeleterow',
-      '|',
-      'tableinsertcolbefore',
-      'tableinsertcolafter',
-      'tabledeletecol'
-    ];
+    var defaultTableToolbar = [''];
+
     var defaultStyles = {
       'border-collapse': 'collapse',
       'width': '100%'
