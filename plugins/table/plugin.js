@@ -4938,8 +4938,6 @@ var table = (function () {
     };
     var Direction = { directionAt: directionAt };
 
-    var defaultTableToolbar = [''];
-
     var defaultStyles = {
       'border-collapse': 'collapse',
       'width': '100%'
@@ -5003,18 +5001,6 @@ var table = (function () {
     var hasObjectResizing = function (editor) {
       var objectResizing = editor.getParam('object_resizing', true);
       return objectResizing === 'table' || objectResizing;
-    };
-    var getToolbar = function (editor) {
-      var toolbar = editor.getParam('table_toolbar', defaultTableToolbar);
-      if (toolbar === '' || toolbar === false) {
-        return [];
-      } else if (isString(toolbar)) {
-        return toolbar.split(/[ ,]/);
-      } else if (isArray(toolbar)) {
-        return toolbar;
-      } else {
-        return [];
-      }
     };
 
     var fireNewRow = function (editor, row) {
@@ -8901,19 +8887,8 @@ var table = (function () {
         onclick: cmd('mceTableDeleteCol')
       });
     };
-    var addToolbars = function (editor) {
-      var isTable = function (table) {
-        var selectorMatched = editor.dom.is(table, 'table') && editor.getBody().contains(table);
-        return selectorMatched;
-      };
-      var toolbar = getToolbar(editor);
-      if (toolbar.length > 0) {
-        editor.addContextToolbar(isTable, toolbar.join(' '));
-      }
-    };
     var Buttons = {
-      addButtons: addButtons,
-      addToolbars: addToolbars
+      addButtons: addButtons
     };
 
     var addMenuItems = function (editor, selections) {
@@ -9242,7 +9217,6 @@ var table = (function () {
       Clipboard.registerEvents(editor, selections, actions, cellSelection);
       MenuItems.addMenuItems(editor, selections);
       Buttons.addButtons(editor);
-      Buttons.addToolbars(editor);
       editor.on('PreInit', function () {
         editor.serializer.addTempAttr(Ephemera.firstSelected());
         editor.serializer.addTempAttr(Ephemera.lastSelected());
