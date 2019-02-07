@@ -50,7 +50,7 @@ tinymce.init(
         {
         tinymce.util.JSONRequest.sendRPC(
             {
-            url: "/tinymce/spellchecker.php",
+            url: "mySpellchecker.php",
             method: "spellcheck",
             params:
                 {
