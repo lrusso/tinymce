@@ -31,6 +31,7 @@ Bugfix 9 | Theme Modern | Prevents from changes in the viewport in mobile device
 Bugfix 10 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
 Bugfix 11 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
 Bugfix 12 | TinyMCE Core | File/New now clears the undo/redo history.
+Bugfix 13 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
 
 ## Spellchecker example image
 
