@@ -6179,7 +6179,7 @@ var table = (function () {
           remove$2(table);
           var rng = editor.dom.createRng();
           rng.setStart(cursor.dom(), 0);
-          rng.setEnd(cursor.dom(), 0);
+          rng.setEnd(cursor.dom(), 1);
           editor.selection.setRng(rng);
         });
       };
