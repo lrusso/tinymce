@@ -60,3 +60,18 @@ Bugfix 11 | TinyMCE Core | Prevents from losing breaklines when copying and past
     }
 }
 ```
+
+## Example of setting of extreme clean formatting
+
+```
+    formats:
+        {
+        removeformat:
+            [
+                {selector: 'b,strong,em,i,font,u,strike', remove : 'all', split : true, expand : false, block_expand: true, deep : true},
+                {selector: 'div', remove : 'all'},
+                {selector: 'span', attributes : ['style', 'class'], remove : 'empty', split : true, expand : false, deep : true},
+                {selector: '*', attributes : ['style', 'class'], split : false, expand : false, deep : true}
+            ]
+        }
+```
