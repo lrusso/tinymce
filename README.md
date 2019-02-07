@@ -1,12 +1,8 @@
 ## TinyMCE 4.9.4 - Personal version with several bugfixes and updates.
 
-## English demo:
-
-https://lrusso.github.io/tinymce/demoEnglish.htm
-
-## Spanish demo:
-
-https://lrusso.github.io/tinymce/demoSpanish.htm
+ENGLISH DEMO | SPANISH VERSION
+:---: | :---:
+https://lrusso.github.io/tinymce/demoEnglish.htm | https://lrusso.github.io/tinymce/demoSpanish.htm
 
 ## Changelog:
 
