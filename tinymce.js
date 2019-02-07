@@ -18707,8 +18707,8 @@
           }],
         alignleft: [
           {
-            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li',
-            styles: { textAlign: 'left' },
+            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li,strong',
+            styles: { textAlign: 'left', display:'block' },
             inherit: false,
             preview: 'font-family font-size',
             defaultBlock: 'div'
@@ -18729,8 +18729,8 @@
         ],
         aligncenter: [
           {
-            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li',
-            styles: { textAlign: 'center' },
+            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li,strong',
+            styles: { textAlign: 'center', display:'block' },
             inherit: false,
             preview: 'font-family font-size',
             defaultBlock: 'div'
@@ -18764,8 +18764,8 @@
         ],
         alignright: [
           {
-            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li',
-            styles: { textAlign: 'right' },
+            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li,strong',
+            styles: { textAlign: 'right', display:'block' },
             inherit: false,
             preview: 'font-family font-size',
             defaultBlock: 'div'
@@ -18785,8 +18785,8 @@
           }
         ],
         alignjustify: [{
-            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li',
-            styles: { textAlign: 'justify' },
+            selector: 'figure,p,h1,h2,h3,h4,h5,h6,td,th,tr,div,ul,ol,li,strong',
+            styles: { textAlign: 'justify', display:'block' },
             inherit: false,
             defaultBlock: 'div',
             preview: 'font-family font-size'
