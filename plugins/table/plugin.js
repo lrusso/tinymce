@@ -5300,22 +5300,6 @@ var table = (function () {
                     value: 'double'
                   },
                   {
-                    text: 'Groove',
-                    value: 'groove'
-                  },
-                  {
-                    text: 'Ridge',
-                    value: 'ridge'
-                  },
-                  {
-                    text: 'Inset',
-                    value: 'inset'
-                  },
-                  {
-                    text: 'Outset',
-                    value: 'outset'
-                  },
-                  {
                     text: 'None',
                     value: 'none'
                   },
