@@ -60,6 +60,15 @@ Bugfix 11 | TinyMCE Core | Prevents from losing breaklines when copying and past
     }
 }
 ```
+## Example of setting for using BR instead of P
+
+```
+force_p_newlines: false,
+force_br_newlines: true,
+convert_newlines_to_brs: false,
+remove_linebreaks: true,
+forced_root_block : false
+```
 
 ## Example of setting of extreme clean formatting
 
@@ -74,14 +83,4 @@ formats:
         {selector: '*', attributes : ['style', 'class'], split : false, expand : false, deep : true}
         ]
     }
-```
-
-## Example of setting for using BR instead of P
-
-```
-force_p_newlines: false,
-force_br_newlines: true,
-convert_newlines_to_brs: false,
-remove_linebreaks: true,
-forced_root_block : false
 ```
