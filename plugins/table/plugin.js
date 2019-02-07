@@ -6287,7 +6287,6 @@ var table = (function () {
         mceTableDelete: eraseTable
       }, function (func, name) {
         editor.addCommand(name, func);
-        alert('test');
       });
       each$3({
         mceInsertTable: curry(TableDialog.open, editor),
