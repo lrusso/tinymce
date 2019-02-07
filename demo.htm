@@ -5,22 +5,11 @@
 		<title>TinyMCE 4.9.4</title>
 		<script src="https://lrusso.github.io/tinymce/tinymce.min.js"></script> 
 		<script>
-			var userLanguage = window.navigator.userLanguage || window.navigator.language;
-			var languageTinyMCE = "";
-			if (userLanguage.substring(0,2)=="es")
-				{
-				languageTinyMCE = "es";
-				}
-				else
-				{
-				languageTinyMCE = "en";
-				}
-
 			tinymce.init(
 							{
 							selector:"#myTinyMCEDocument",
 							auto_focus: "myTinyMCEDocument",
-							language: languageTinyMCE,
+							language: "en", // OR "es" FOR SPANISH
 							plugins: "print searchreplace autolink directionality contextmenu visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor insertdatetime advlist textcolor lists wordcount save imagetools textpattern",
 							toolbar1: "save | print | cut copy paste | undo redo | removeformat | template image link table | charmap | fullscreen",
 							toolbar2: "fontselect | fontsizeselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | forecolor backcolor | bullist numlist outdent indent",
