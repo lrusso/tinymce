@@ -41,6 +41,7 @@ tinymce.init(
     menubar: "tools",
     toolbar: "spellchecker",
     spellchecker_language: "en",
+    spellchecker_languages: "English=en,Spanish=es",
     spellchecker_callback: function(method, text, success, failure)
         {
         tinymce.util.JSONRequest.sendRPC(
