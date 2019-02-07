@@ -31,7 +31,26 @@
 								ed.on("keyup", function (e)						{			});
 								ed.on("focus", function(e)						{			});
 								ed.on("blur", function(e)						{			});
-								}
+								},
+							// THE FOLLOWING FUNCTION ALLOWS TO UPLOAD IMAGES TO THE DOCUMENT AS BASE64
+							images_upload_handler: function (blobInfo, success, failure)
+								{
+								try
+									{
+									var reader = new FileReader();
+									reader.readAsDataURL(blobInfo.blob());
+									reader.onloadend = function()
+										{
+										var base64data = reader.result;
+										success(base64data);
+										};
+									}
+									catch(err)
+									{
+									success('');
+									}
+								},
+							paste_data_images: true
 							}
 						);
 
