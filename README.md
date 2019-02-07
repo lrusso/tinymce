@@ -28,7 +28,7 @@ Bugfix 6 | Plugin WordCount | Prevents from showing the wordcount as plural when
 Bugfix 7 | Plugin CodeSample | Prevents from showing a vertical scrollbar in 720p devices.
 Bugfix 8 | Skin LightGray | Fixes the max height possible for menus.
 Bugfix 9 | Theme Modern | Prevents from changes in the viewport in mobile devices.
-Bugfix 10 | Theme Modern | Changed formula to n = 72 * parseInt(e,10)/99 for mobile devices.
+Bugfix 10 | Theme Modern | Changed formula to n=72\*parseInt(e,10)/99 for mobile devices.
 Bugfix 11 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
 Bugfix 12 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
 Bugfix 13 | TinyMCE Core | File/New now clears the undo/redo history.
