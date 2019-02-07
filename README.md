@@ -15,6 +15,7 @@ Added | Plugin Save | Save menu item.
 Added | Plugin Table | New tables with single border as default.
 Added | Plugin ContextMenu | Table properties item in the context menu.
 Added | Plugin Spellchecker | (No suggestions) item when there are no suggestions.
+Added | Plugin WordCount | Default cursor and non selectable the wordcount value.
 Added | TinyMCE Style | Light gray separator between the document and the status bar.
 Added | In Demo Script | Implemented a script that notifies when pasting external linked images.
 Added | In Demo Script | Implemented a script for uploading images into the document as base64.
