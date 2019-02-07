@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>TinyMCE 4.9.4</title>
+		<script src="https://lrusso.github.io/tinymce/tinymce.min.js"></script> 
+		<script>
+			tinymce.init(
+							{
+							selector:"#myTinyMCEDocument",
+							auto_focus: "myTinyMCEDocument",
+							language: "es",
+							plugins: "print searchreplace autolink directionality contextmenu visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor insertdatetime advlist textcolor lists wordcount save imagetools textpattern",
+							toolbar1: "save | print | cut copy paste | undo redo | removeformat | template image link table | charmap | fullscreen",
+							toolbar2: "fontselect | fontsizeselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | forecolor backcolor | bullist numlist outdent indent",
+							templates:
+								[
+								{ title: "Plantilla de prueba 1", content: "Prueba 1" },
+								{ title: "Plantilla de prueba 2", content: "Prueba 2" }
+								],
+							setup:function(ed)
+								{
+								ed.on("FullscreenStateChanged", function(e)		{			});
+								ed.on("click", function (e)						{			});
+								ed.on("dblclick", function (e)					{			});
+								ed.on("mousemove", function (e)					{			});
+								ed.on("keypress", function (e)					{			});
+								ed.on("keydown", function (e)					{			});
+								ed.on("keyup", function (e)						{			});
+								ed.on("focus", function(e)						{			});
+								ed.on("blur", function(e)						{			});
+								}
+							}
+						);
+
+			function resizeTinyMCE()
+				{
+				var w = window, d = document, e = d.documentElement, g = d.getElementsByTagName("body")[0], x = w.innerWidth || e.clientWidth || g.clientWidth, y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+				var editHeight = y - 141;
+				tinymce.get("myTinyMCEDocument").theme.resizeTo("100%", editHeight);
+				}
+
+			window.onload = function()
+				{
+				resizeTinyMCE();
+				};
+
+			window.onresize = function()
+				{
+				resizeTinyMCE();
+				};
+
+		</script>
+	</head>
+	<body style="margin:0;padding:0;">
+		<textarea id="myTinyMCEDocument"></textarea>
+	</body>
+</html>
