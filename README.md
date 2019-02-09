@@ -1,6 +1,5 @@
 ## TinyMCE 4.9.4 - Personal version with several bugfixes and updates.
 
-
 ## DEMO:
 
 https://lrusso.github.io/tinymce/demo.htm
