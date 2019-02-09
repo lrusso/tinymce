@@ -9,7 +9,7 @@ https://lrusso.github.io/tinymce/demo.htm
 
 TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
-Added | Language Spanish | Complete translation.
+Added | Language | Spanish complete translation.
 Added | Theme Modern | Branding banner disabled.
 Added | Plugin Save | Save menu item.
 Added | Plugin Table | New tables with single border as default.
