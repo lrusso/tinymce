@@ -32,7 +32,9 @@
 																					var element=ed.dom.getParent(ed.selection.getNode(),"table");
 																					if (element==null)
 																						{
-																						ed.execCommand("mceInsertContent",false,"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ");e.preventDefault();return false;
+																						ed.execCommand("mceInsertContent",false,"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ");
+																						e.preventDefault();
+																						return false;
 																						}
 																					}
 																				});
