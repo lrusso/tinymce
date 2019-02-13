@@ -26,7 +26,16 @@
 								ed.on("mouseenter", function (e)				{			});
 								ed.on("mouseleave", function (e)				{			});
 								ed.on("keypress", function (e)					{			});
-								ed.on("keydown", function (e)					{			});
+								ed.on("keydown", function (e)					{
+																				if (9==e.keyCode)
+																					{
+																					var element=ed.dom.getParent(ed.selection.getNode(),"table");
+																					if (element==null)
+																						{
+																						ed.execCommand("mceInsertContent",false,"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ");e.preventDefault();return false;
+																						}
+																					}
+																				});
 								ed.on("keyup", function (e)						{			});
 								ed.on("focus", function(e)						{			});
 								ed.on("blur", function(e)						{			});
