@@ -7172,7 +7172,11 @@ var modern = (function () {
         var self = this;
         self.state.set('value', null);
         editor.on('init nodeChange', function (e) {
-          var fontFamily = editor.queryCommandValue('FontName');
+          var fontFamily;
+          fontFamily = editor.queryCommandValue('FontName');
+          if (editor.getContent().length==0) {
+            fontFamily = "Arial";
+          }
           var match = findMatchingValue(items, fontFamily);
           self.value(match ? match : null);
           if (!match && fontFamily) {
@@ -7242,7 +7246,11 @@ var modern = (function () {
       return function () {
         var self = this;
         editor.on('init nodeChange', function (e) {
-          var px = editor.queryCommandValue('FontSize');
+          var px;
+          px = editor.queryCommandValue('FontSize');
+          if (editor.getContent().length==0){
+            px = "16px";
+            }
           self.value(px);
           self.text(px.substr(0, px.indexOf('px')));
         });
