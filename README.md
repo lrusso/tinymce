@@ -68,6 +68,7 @@ Bugfix 17 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
     }
 }
 ```
+
 ## Example of setting for using BR instead of P
 
 ```
@@ -76,6 +77,24 @@ force_br_newlines: true,
 convert_newlines_to_brs: false,
 remove_linebreaks: true,
 forced_root_block : false
+```
+
+## Example of inserting spaces (tabs) when Tab key is down
+
+```
+ed.on("keydown", function (e)
+    {
+    if (9==e.keyCode)
+        {
+        var element=ed.dom.getParent(ed.selection.getNode(),"table");
+        if (element==null)
+            {
+            ed.execCommand("mceInsertContent",false,"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ");
+            e.preventDefault();
+            return false;
+            }
+        }
+    });
 ```
 
 ## Example of setting for extreme filter from external content
