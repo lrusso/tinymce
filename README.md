@@ -84,7 +84,7 @@ forced_root_block : false
 ```
 ed.on("keydown", function (e)
     {
-    if (9==e.keyCode)
+    if (e.keyCode==9)
         {
         var element=ed.dom.getParent(ed.selection.getNode(),"table");
         if (element==null)
