@@ -10,6 +10,7 @@ TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
 Added | Language Spanish | Complete translation.
 Added | Theme Modern | Branding banner disabled.
+Added | Theme Modern | More font sizes available.
 Added | Plugin Save | Save menu item.
 Added | Plugin Table | New tables with single border as default.
 Added | Plugin ContextMenu | Table properties item in the context menu.
