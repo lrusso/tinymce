@@ -28,12 +28,13 @@ Bugfix 7 | Plugin CodeSample | Prevents from showing a vertical scrollbar in 720
 Bugfix 8 | Skin LightGray | Fixes the max height possible for menus.
 Bugfix 9 | Theme Modern | Prevents from changes in the viewport in mobile devices.
 Bugfix 10 | Theme Modern | Using px instead of pt for better mobile devices performance.
-Bugfix 11 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
-Bugfix 12 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
-Bugfix 13 | TinyMCE Core | File/New now clears the undo/redo history.
-Bugfix 14 | TinyMCE Core | File/New now clears the dirty state.
-Bugfix 15 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
-Bugfix 16 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
+Bugfix 11 | Theme Modern | Prevents from showing 'Font Family' and 'Font Size' when no content.
+Bugfix 12 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
+Bugfix 13 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
+Bugfix 14 | TinyMCE Core | File/New now clears the undo/redo history.
+Bugfix 15 | TinyMCE Core | File/New now clears the dirty state.
+Bugfix 16 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
+Bugfix 17 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
 
 ## Spellchecker example image
 
