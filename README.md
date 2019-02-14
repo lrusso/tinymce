@@ -8,19 +8,19 @@ https://lrusso.github.io/tinymce/demo.htm
 
 TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
-Added | Language Spanish | Complete translation.
-Added | Theme Modern | Branding banner disabled.
-Added | Theme Modern | More font sizes available.
-Added | Theme Modern | Hides 'px' in the font size list.
-Added | Plugin Save | Save menu item.
-Added | Plugin Table | New tables with single border as default.
-Added | Plugin ContextMenu | Table properties item in the context menu.
-Added | Plugin Spellchecker | (No suggestions) item when there are no suggestions.
-Added | Plugin WordCount | Default cursor and non selectable on the wordcount value.
-Added | TinyMCE Style | Light gray separator between the document and the status bar.
-Added | In Demo Script | Implemented a script that notifies when pasting external linked images.
-Added | In Demo Script | Implemented a script for uploading images into the document as base64.
-Added | In Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
+Update 1 | Language Spanish | Complete translation.
+Update 2 | Theme Modern | Branding banner disabled.
+Update 3 | Theme Modern | More font sizes available.
+Update 4 | Theme Modern | Hides 'px' in the font size list.
+Update 5 | Plugin Save | Save menu item.
+Update 6 | Plugin Table | New tables with single border as default.
+Update 7 | Plugin ContextMenu | Table properties item in the context menu.
+Update 8 | Plugin Spellchecker | (No suggestions) item when there are no suggestions.
+Update 9 | Plugin WordCount | Default cursor and non selectable on the wordcount value.
+Update 10 | TinyMCE Style | Light gray separator between the document and the status bar.
+Update 11 | In Demo Script | Implemented a script that notifies when pasting external linked images.
+Update 12 | In Demo Script | Implemented a script for uploading images into the document as base64.
+Update 13 | In Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
 Bugfix 1 | Plugin Spellchecker | Hides the suggestions when the spellchecker is disabled.
 Bugfix 2 | Plugin Spellchecker | Prevents to move arround the document while spellchecking.
 Bugfix 3 | Plugin Spellchecker | Prevents words remains marked when the user changes the language.
