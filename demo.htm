@@ -27,7 +27,7 @@
 								ed.on("mouseleave", function (e)				{			});
 								ed.on("keypress", function (e)					{			});
 								ed.on("keydown", function (e)					{
-																				if (9==e.keyCode)
+																				if (e.keyCode==9)
 																					{
 																					var element=ed.dom.getParent(ed.selection.getNode(),"table");
 																					if (element==null)
