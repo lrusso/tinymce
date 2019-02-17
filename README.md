@@ -93,7 +93,7 @@ valid_classes: "<*>SOME<*>IMPOSSIBLE<*>CLASSTYPE><*>",
 paste_merge_formats: true,
 ```
 
-## Example of paste preprocessing when extreme filter from external content
+## Example of paste preprocess if extreme filter from external content used
 
 ```
 paste_preprocess: function(plugin, args)
