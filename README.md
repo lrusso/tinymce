@@ -4,8 +4,8 @@
 
 DESCRIPTION | URL
 :---: | --- |
-Form saving mode | https://lrusso.github.io/tinymce/demo1.htm
-AJAX saving mode | https://lrusso.github.io/tinymce/demo2.htm
+Form saving example | https://lrusso.github.io/tinymce/demo1.htm
+AJAX saving example | https://lrusso.github.io/tinymce/demo2.htm
 
 ## Changelog:
 
