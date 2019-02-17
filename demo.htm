@@ -7,8 +7,8 @@
 		<script>
 			tinymce.init(
 							{
-							selector:"#myTinyMCEDocument",
-							auto_focus: "myTinyMCEDocument",
+							selector:"#my_TinyMCE_Document",
+							auto_focus: "my_TinyMCE_Document",
 							language: "en", // OR "es" FOR SPANISH
 							plugins: "advlist anchor autolink charmap codesample contextmenu directionality hr image imagetools insertdatetime link lists media nonbreaking pagebreak paste print save searchreplace spellchecker table template textcolor textpattern visualblocks visualchars wordcount",
 							toolbar1: "save | spellchecker | print | cut copy paste | undo redo | template image link table | charmap",
@@ -113,7 +113,7 @@
 				{
 				var w = window, d = document, e = d.documentElement, g = d.getElementsByTagName("body")[0], x = w.innerWidth || e.clientWidth || g.clientWidth, y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 				var editHeight = y - 142;
-				tinymce.get("myTinyMCEDocument").theme.resizeTo("100%", editHeight);
+				tinymce.get("my_TinyMCE_Document").theme.resizeTo("100%", editHeight);
 				}
 
 			window.onload = function()
@@ -129,6 +129,6 @@
 		</script>
 	</head>
 	<body style="margin:0;padding:0;">
-		<textarea id="myTinyMCEDocument"></textarea>
+		<textarea id="my_TinyMCE_Document"></textarea>
 	</body>
 </html>
