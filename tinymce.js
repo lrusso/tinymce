@@ -15804,6 +15804,9 @@
         e.content = replaceBlobUris(e.content);
       });
       editor.on('getContent', function (e) {
+      //if (settings.encoding === 'xml') {
+        e.content = DOM$5.encode(e.content);
+      //}
         if (e.source_view || e.format === 'raw') {
           return;
         }
