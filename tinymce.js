@@ -15807,7 +15807,12 @@
         if (e.source_view || e.format === 'raw') {
           return;
         }
-        e.content = replaceBlobUris(e.content);
+        else if (e.format === 'xml') {
+          e.content = DOM$5.encode(e.content);
+        }
+        else {
+          e.content = replaceBlobUris(e.content);
+        }
       });
       editor.on('PostRender', function () {
         editor.parser.addNodeFilter('img', function (images) {
