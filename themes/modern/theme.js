@@ -7766,7 +7766,7 @@ var modern = (function () {
           'mceToggleVisualAid'
         ],
         newdocument: [
-          'New document',
+          'New',
           'mceNewDocument'
         ],
         removeformat: [
@@ -7846,7 +7846,7 @@ var modern = (function () {
           'RemoveFormat'
         ],
         newdocument: [
-          'New document',
+          'New',
           'mceNewDocument'
         ],
         cut: [
