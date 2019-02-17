@@ -14,8 +14,8 @@ TYPE | ELEMENT | DETAILS
 Update 1 | Language Spanish | Complete translation.
 Update 2 | Theme Modern | Branding banner disabled.
 Update 3 | Theme Modern | More font sizes available.
-Update 4 | Theme Modern | Font sizes in 'px' instead of 'pt'.
-Update 5 | Theme Modern | Hides 'px' in the font size list.
+Update 4 | Theme Modern | Font sizes in "px" instead of "pt".
+Update 5 | Theme Modern | Hides "px" in the font size list.
 Update 6 | Plugin Save | Save menu item.
 Update 7 | Plugin Table | New tables with single border as default.
 Update 8 | Plugin ContextMenu | Table properties item in the context menu.
@@ -36,7 +36,7 @@ Bugfix 7 | Plugin CodeSample | Prevents from showing a vertical scrollbar in 720
 Bugfix 8 | Skin LightGray | Fixes the max height possible for menus.
 Bugfix 9 | Theme Modern | Prevents from changes in the viewport in mobile devices.
 Bugfix 10 | Theme Modern | Using px instead of pt for better mobile devices performance.
-Bugfix 11 | Theme Modern | Prevents from showing 'Font Family' and 'Font Size' when no content.
+Bugfix 11 | Theme Modern | Prevents from showing "Font Family" and "Font Size" when no content.
 Bugfix 12 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
 Bugfix 13 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
 Bugfix 14 | TinyMCE Core | File/New now clears the undo/redo history.
