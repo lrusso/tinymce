@@ -79,24 +79,6 @@ remove_linebreaks: true,
 forced_root_block : false
 ```
 
-## Example of inserting spaces (tabs) when Tab key is down
-
-```
-ed.on("keydown", function (e)
-    {
-    if (e.keyCode==9)
-        {
-        var element=ed.dom.getParent(ed.selection.getNode(),"table");
-        if (element==null)
-            {
-            ed.execCommand("mceInsertContent",false,"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ");
-            e.preventDefault();
-            return false;
-            }
-        }
-    });
-```
-
 ## Example of setting for extreme filter from external content
 
 ```
