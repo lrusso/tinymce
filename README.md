@@ -14,7 +14,7 @@ TYPE | ELEMENT | DETAILS
 Update 1 | Language Spanish | Complete translation.
 Update 2 | Theme Modern | Branding banner disabled.
 Update 3 | Theme Modern | More font sizes available.
-Update 4 | Theme Modern | Using 'px' instead of 'pt'.
+Update 4 | Theme Modern | Font sizes in 'px' instead of 'pt'.
 Update 5 | Theme Modern | Hides 'px' in the font size list.
 Update 6 | Plugin Save | Save menu item.
 Update 7 | Plugin Table | New tables with single border as default.
