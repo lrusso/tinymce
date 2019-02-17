@@ -84,16 +84,6 @@ remove_linebreaks: true,
 forced_root_block : false
 ```
 
-## Example of paste preprocessing when using BR and breaklines are needed
-
-```
-paste_preprocess: function(plugin, args)
-    {
-    args.content = args.content.replace(new RegExp("</div>", "g"), "</div><br />");
-    args.content = args.content.replace(new RegExp("</p>", "g"), "</p><br />");
-    },
-```
-
 ## Example of setting for extreme filter from external content
 
 ```
@@ -101,6 +91,16 @@ invalid_styles: "font-family font-size",
 invalid_elements : "h1,h2,h3,h4,h5,h6,pre,code,p,div,input,textarea,sub,sup,hr,figure,article,iframe,header,footer,section,nav,aside,form,script",
 valid_classes: "<*>SOME<*>IMPOSSIBLE<*>CLASSTYPE><*>",
 paste_merge_formats: true,
+```
+
+## Example of paste preprocessing when extreme filter from external content
+
+```
+paste_preprocess: function(plugin, args)
+    {
+    args.content = args.content.replace(new RegExp("</div>", "g"), "</div><br />");
+    args.content = args.content.replace(new RegExp("</p>", "g"), "</p><br />");
+    },
 ```
 
 ## Example of setting for extreme clean formatting
