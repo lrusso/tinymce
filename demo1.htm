@@ -130,6 +130,10 @@
 		</script>
 	</head>
 	<body style="margin:0;padding:0;">
-		<textarea id="my_TinyMCE_Document"></textarea>
+		<form action="demo1.htm" method="POST">
+			<textarea id="my_TinyMCE_Document"></textarea>
+			<!-- THE BUTTON INSIDE THE FORM WITH THE NAME submitbtn IS EXECUTED WHEN THE SAVE ICON IS CLICKED -->
+			<button name="submitbtn" style="display:none;"></button>
+		</form>
 	</body>
 </html>
