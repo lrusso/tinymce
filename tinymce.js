@@ -15809,9 +15809,6 @@
         }
         e.content = replaceBlobUris(e.content);
       });
-      editor.on('getContentEncoded', function (e) {
-        e.content = DOM$5.encode(e.content);
-      });
       editor.on('PostRender', function () {
         editor.parser.addNodeFilter('img', function (images) {
           each(images, function (img) {
