@@ -123,7 +123,7 @@
 				tinymce.activeEditor.setMode("readonly");
 
 				// SETTING THE PARAMETERS FOR THE REQUEST
-				var valueDocument = tinymce.activeEditor.getContent();
+				var valueDocument = tinymce.activeEditor.getContentEncoded();
 				var params = "documentdata=" + encodeURIComponent(valueDocument);
 
 				// SETTING THE SERVER URL FOR SAVING AND THE TIMEOUT VALUE
