@@ -42,6 +42,7 @@ Bugfix 14 | TinyMCE Core | File/New now clears the undo/redo history.
 Bugfix 15 | TinyMCE Core | File/New now clears the dirty state.
 Bugfix 16 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
 Bugfix 17 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
+Bugfix 18 | TinyMCE Core | Fixed the encoding for the document in getContent.
 
 ## Spellchecker example image
 
