@@ -87,11 +87,11 @@ forced_root_block : false
 ## Example of paste preprocessing when using BR and breaklines are needed
 
 ```
-    paste_preprocess: function(plugin, args)
-        {
-        args.content = args.content.replace(new RegExp("</div>", "g"), "</div><br />");
-        args.content = args.content.replace(new RegExp("</p>", "g"), "</p><br />");
-        },
+paste_preprocess: function(plugin, args)
+    {
+    args.content = args.content.replace(new RegExp("</div>", "g"), "</div><br />");
+    args.content = args.content.replace(new RegExp("</p>", "g"), "</p><br />");
+    },
 ```
 
 ## Example of setting for extreme filter from external content
