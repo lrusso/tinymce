@@ -93,7 +93,7 @@
 									}
 									catch(err)
 									{
-									success('');
+									success("");
 									}
 								},
 							paste_data_images: true,
@@ -104,7 +104,7 @@
 								var re = new RegExp(/<img[^>]* src="http.*?>/i);
 								if (re.test(args.content))
 									{
-									tinymce.activeEditor.notificationManager.open({text: 'IMPORTANT: Images were inserted in the document that are loaded from other websites and may be not available in other moment.', type: 'info', timeout: 8000});
+									tinymce.activeEditor.notificationManager.open({text: "IMPORTANT: Images were inserted in the document that are loaded from other websites and may be not available in other moment.", type: "info", timeout: 8000});
 									}
 								}
 							}
