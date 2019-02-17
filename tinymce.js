@@ -15804,13 +15804,13 @@
         e.content = replaceBlobUris(e.content);
       });
       editor.on('getContent', function (e) {
-      //if (settings.encoding === 'xml') {
-        e.content = DOM$5.encode(e.content);
-      //}
         if (e.source_view || e.format === 'raw') {
           return;
         }
         e.content = replaceBlobUris(e.content);
+      });
+      editor.on('getContentEncoded', function (e) {
+        e.content = DOM$5.encode(e.content);
       });
       editor.on('PostRender', function () {
         editor.parser.addNodeFilter('img', function (images) {
@@ -24599,13 +24599,13 @@
       }
       editor.windowManager = WindowManager(editor);
       editor.notificationManager = NotificationManager(editor);
-      //if (settings.encoding === 'xml') {
+      if (settings.encoding === 'xml') {
         editor.on('GetContent', function (e) {
           if (e.save) {
             e.content = DOM$5.encode(e.content);
           }
         });
-      //}
+      }
       if (settings.add_form_submit_trigger) {
         editor.on('submit', function () {
           if (editor.initialized) {
