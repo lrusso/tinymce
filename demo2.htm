@@ -10,7 +10,6 @@
 							selector:"#my_TinyMCE_Document",
 							auto_focus: "my_TinyMCE_Document",
 							language: "en", // OR "es" FOR SPANISH
-							encoding: 'xml',
 							plugins: "advlist anchor autolink charmap codesample colorpicker contextmenu directionality hr image imagetools insertdatetime link lists media nonbreaking pagebreak paste print save searchreplace spellchecker table template textcolor textpattern visualblocks visualchars wordcount",
 							toolbar1: "save | spellchecker | print | cut copy paste | undo redo | template image link table | charmap",
 							toolbar2: "fontselect | fontsizeselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | forecolor backcolor | bullist numlist | outdent indent | removeformat",
@@ -94,7 +93,7 @@
 									}
 									catch(err)
 									{
-									success('');
+									success("");
 									}
 								},
 							paste_data_images: true,
@@ -105,7 +104,7 @@
 								var re = new RegExp(/<img[^>]* src="http.*?>/i);
 								if (re.test(args.content))
 									{
-									tinymce.activeEditor.notificationManager.open({text: 'IMPORTANT: Images were inserted in the document that are loaded from other websites and may be not available in other moment.', type: 'info', timeout: 8000});
+									tinymce.activeEditor.notificationManager.open({text: "IMPORTANT: Images were inserted in the document that are loaded from other websites and may be not available in other moment.", type: "info", timeout: 8000});
 									}
 								},
 
@@ -124,7 +123,7 @@
 				tinymce.activeEditor.setMode("readonly");
 
 				// SETTING THE PARAMETERS FOR THE REQUEST
-				var valueDocument = tinymce.activeEditor.getContent({format:'xml'});
+				var valueDocument = tinymce.activeEditor.getContent({format:"xml"});
 				var params = "documentdata=" + encodeURIComponent(valueDocument);
 
 				// SETTING THE SERVER URL FOR SAVING AND THE TIMEOUT VALUE
