@@ -24596,13 +24596,13 @@
       }
       editor.windowManager = WindowManager(editor);
       editor.notificationManager = NotificationManager(editor);
-      if (settings.encoding === 'xml') {
+      //if (settings.encoding === 'xml') {
         editor.on('GetContent', function (e) {
           if (e.save) {
             e.content = DOM$5.encode(e.content);
           }
         });
-      }
+      //}
       if (settings.add_form_submit_trigger) {
         editor.on('submit', function () {
           if (editor.initialized) {
