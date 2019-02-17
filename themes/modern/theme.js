@@ -776,7 +776,7 @@ var modern = (function () {
     var defaultMenus = {
       file: {
         title: 'File',
-        items: 'newdocument restoredraft | preview | print'
+        items: 'newdocument restoredraft | save | preview | print'
       },
       edit: {
         title: 'Edit',
