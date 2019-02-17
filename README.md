@@ -25,6 +25,7 @@ Update 11 | TinyMCE Style | Light gray separator between the document and the st
 Update 12 | In Demo Script | Implemented a script that notifies when pasting external linked images.
 Update 13 | In Demo Script | Implemented a script for uploading images into the document as base64.
 Update 14 | In Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
+Update 15 | TinyMCE Core | Added tinymce.activeEditor.getContent({format:"xml"}).
 Bugfix 1 | Plugin Spellchecker | Hides the suggestions when the spellchecker is disabled.
 Bugfix 2 | Plugin Spellchecker | Prevents to move arround the document while spellchecking.
 Bugfix 3 | Plugin Spellchecker | Prevents words remains marked when the user changes the language.
@@ -42,7 +43,6 @@ Bugfix 14 | TinyMCE Core | File/New now clears the undo/redo history.
 Bugfix 15 | TinyMCE Core | File/New now clears the dirty state.
 Bugfix 16 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
 Bugfix 17 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
-Bugfix 18 | TinyMCE Core | Fixed the encoding for the document in getContent.
 
 ## Spellchecker example image
 
