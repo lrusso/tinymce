@@ -43,7 +43,7 @@ Bugfix 14 | TinyMCE Core | File/New now clears the undo/redo history.
 Bugfix 15 | TinyMCE Core | File/New now clears the dirty state.
 Bugfix 16 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
 Bugfix 17 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
-Bugfix 18 | TinyMCE Core | Fixed that tables had a wrong initial scroll top position in mobile devices.
+Bugfix 18 | TinyMCE Core | Fixed tables with a wrong initial scroll top position in mobile devices.
 
 ## Spellchecker example image
 
