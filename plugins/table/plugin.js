@@ -4939,7 +4939,6 @@ var table = (function () {
     var Direction = { directionAt: directionAt };
 
     var defaultStyles = {
-      'border-collapse': 'collapse',
       'width': '100%'
     };
     var defaultAttributes = { border: '1' };
@@ -5799,7 +5798,6 @@ var table = (function () {
 
     var DefaultRenderOptions = {
       styles: {
-        'border-collapse': 'collapse',
         width: '100%'
       },
       attributes: { border: '1' },
