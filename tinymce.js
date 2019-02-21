@@ -17634,6 +17634,7 @@
         }
       };
       editor.on('init', function () {
+        tinymce.activeEditor.getWin().scrollTo(0,0);
         self.add();
       });
       editor.on('BeforeExecCommand', function (e) {
