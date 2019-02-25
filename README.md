@@ -28,7 +28,7 @@ Update 14 | In Demo Script | Implemented a script for adding spaces (tabs) when 
 Bugfix 1 | Plugin Spellchecker | Hides the suggestions when the spellchecker is disabled.
 Bugfix 2 | Plugin Spellchecker | Prevents to move arround the document while spellchecking.
 Bugfix 3 | Plugin Spellchecker | Prevents words remains marked when the user changes the language.
-Bugfix 4 | Plugin Spellchecker | Prevents from changing a document thats starts with a table.
+Bugfix 4 | Plugin Spellchecker | Prevents from making changes in a document thats starts with a table.
 Bugfix 5 | Plugin Table | Prevents a table width to change when adding a column without width data.
 Bugfix 6 | Plugin TextColor | Prevents from missplacing the X value in the transparent color cell.
 Bugfix 7 | Plugin WordCount | Prevents from showing the wordcount as plural when one word written.
