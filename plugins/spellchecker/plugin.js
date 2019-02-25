@@ -438,10 +438,16 @@ var spellchecker = (function () {
       var successCallback = function (data) {
         markErrors(editor, startedState, textMatcherState, lastSuggestionsState, data);
       };
+      // FOR PREVENTING A BUG WHERE SOMETIMES (TOTALLY RANDOM) THE SPELLCHECKER DOESN'T WORK WITH A DOCUMENT THAT STARTS WITH A TABLE
+      if(editor.getBody().innerHTML.indexOf('<table')==0 && editor.getBody().innerHTML.indexOf('data-mce-bogus')===-1) {
+      tinymce.activeEditor.notificationManager.open({text: 'Error while spellchecking. Please refresh the page and try again.', type: 'error', timeout: 3000});
+      }
+      else {
       editor.setProgressState(true);
       sendRpcCall(editor, pluginUrl, currentLanguageState, 'spellcheck', getTextMatcher(editor, textMatcherState).text, successCallback, errorCallback);
       editor.focus();
       editor.setMode('readonly');
+      }
     };
     var checkIfFinished = function (editor, startedState, textMatcherState) {
       if (!editor.dom.select('span.mce-spellchecker-word').length) {
