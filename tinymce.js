@@ -17635,6 +17635,11 @@
       };
       editor.on('init', function () {
         tinymce.activeEditor.getWin().scrollTo(0,0);
+        if (editor.getBody().innerHTML.indexOf('<table')==0)
+          {
+          editor.selection.getSel().modify('move', 'forward', 'lineboundary');
+          editor.selection.getSel().modify('move', 'backward', 'lineboundary');
+          }
         self.add();
       });
       editor.on('BeforeExecCommand', function (e) {
