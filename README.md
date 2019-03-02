@@ -11,26 +11,26 @@ AJAX saving example | https://lrusso.github.io/tinymce/demo2.htm
 
 BUGFIX | ELEMENT | DETAILS
 :---: | :---: | --- |
-1 | Plugin Spellchecker | Hides the suggestions when the spellchecker is disabled.
-2 | Plugin Spellchecker | Prevents to move arround the document while spellchecking.
-3 | Plugin Spellchecker | Prevents words remains marked when the user changes the language.
-4 | Plugin Spellchecker | Prevents from making changes in a document thats starts with a table.
-5 | Plugin Table | Prevents a table width to change when adding a column without width data.
-6 | Plugin TextColor | Prevents from missplacing the X value in the transparent color cell.
-7 | Plugin WordCount | Prevents from showing the wordcount as plural when one word written.
-8 | Plugin CodeSample | Prevents from showing a vertical scrollbar in 720p devices.
-9 | Skin LightGray | Fixes the max height possible for menus.
-10 | Theme Modern | Prevents from changes in the viewport in mobile devices.
-11 | Theme Modern | Using px instead of pt for better mobile devices performance.
-12 | Theme Modern | Prevents from showing "Font Family" and "Font Size" when no content.
-13 | TinyMCE Style | Prevents from showing extra large fonts in mobile devices.
-14 | TinyMCE Core | Prevents from losing breaklines when copying and pasting a text.
-15 | TinyMCE Core | File/New now clears the undo/redo history.
-16 | TinyMCE Core | File/New now clears the dirty state.
-17 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
-18 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
-19 | TinyMCE Core | Fixed tables with a wrong initial scroll top position in mobile devices.
-20 | TinyMCE Core | Fixed that text styles didn't update on init when the document started with a table.
+1 | Spellchecker | Hides the suggestions when the spellchecker is disabled.
+2 | Spellchecker | Prevents to move arround the document while spellchecking.
+3 | Spellchecker | Prevents words remains marked when the user changes the language.
+4 | Spellchecker | Prevents from making changes in a document thats starts with a table.
+5 | Table | Prevents a table width to change when adding a column without width data.
+6 | TextColor | Prevents from missplacing the X value in the transparent color cell.
+7 | WordCount | Prevents from showing the wordcount as plural when one word written.
+8 | CodeSample | Prevents from showing a vertical scrollbar in 720p devices.
+9 | Skin | Fixes the max height possible for menus.
+10 | Skin | Prevents from showing extra large fonts in mobile devices.
+11 | Theme  | Prevents from changes in the viewport in mobile devices.
+12 | Theme  | Using px instead of pt for better mobile devices performance.
+13 | Theme  | Prevents from showing "Font Family" and "Font Size" when no content.
+14 | Core | Prevents from losing breaklines when copying and pasting a text.
+15 | Core | File/New now clears the undo/redo history.
+16 | Core | File/New now clears the dirty state.
+17 | Core | Fixed that sometimes the align left and right didn't work.
+18 | Core | Fixed that the alignment didn't work in strong tags.
+19 | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
+20 | Core | Fixed that text styles didn't update on init when the document started with a table.
 
 TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
