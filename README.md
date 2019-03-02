@@ -44,7 +44,7 @@ UPDATE | ELEMENT | DETAILS
 8 | Spellchecker | (No suggestions) item when there are no suggestions.
 9 | WordCount | Default cursor and non selectable on the wordcount value.
 10 | Skin | Light gray separator between the document and the status bar.
-11 | Skin | Added tinymce.activeEditor.getContent({format:"xml"}).
+11 | Core | Added tinymce.activeEditor.getContent({format:"xml"}).
 12 | Demo Script | Implemented a script that notifies when pasting external linked images.
 13 | Demo Script | Implemented a script for uploading images into the document as base64.
 14 | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
