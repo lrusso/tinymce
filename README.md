@@ -30,7 +30,7 @@ BUGFIX | ELEMENT | DETAILS
 17 | Core | Fixed that sometimes the align left and right didn't work.
 18 | Core | Fixed that the alignment didn't work in strong tags.
 19 | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
-20 | Core | Fixed that text styles didn't update on init when the document started with a table.
+20 | Core | Fixed that text styles didn't update on init if the document started with a table.
 
 UPDATE | ELEMENT | DETAILS
 :---: | :---: | --- |
