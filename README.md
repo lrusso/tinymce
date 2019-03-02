@@ -44,6 +44,7 @@ Bugfix 16 | TinyMCE Core | File/New now clears the dirty state.
 Bugfix 17 | TinyMCE Core | Fixed that sometimes the align left and right didn't work.
 Bugfix 18 | TinyMCE Core | Fixed that the alignment didn't work in strong tags.
 Bugfix 19 | TinyMCE Core | Fixed tables with a wrong initial scroll top position in mobile devices.
+Bugfix 20 | TinyMCE Core | Fixed that text styles didn't update on init when the document started with a table.
 
 ## Spellchecker example image
 
