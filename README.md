@@ -32,23 +32,22 @@ BUGFIX | ELEMENT | DETAILS
 19 | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
 20 | Core | Fixed that text styles didn't update on init when the document started with a table.
 
-TYPE | ELEMENT | DETAILS
+UPDATE | ELEMENT | DETAILS
 :---: | :---: | --- |
-Update 1 | Language Spanish | Complete translation.
-Update 2 | Theme Modern | Branding banner disabled.
-Update 3 | Theme Modern | More font sizes available.
-Update 4 | Theme Modern | Font sizes in "px" instead of "pt".
-Update 5 | Theme Modern | Hides "px" in the font size list.
-Update 6 | Plugin Save | Save menu item.
-Update 7 | Plugin ContextMenu | Table properties item in the context menu.
-Update 8 | Plugin Spellchecker | (No suggestions) item when there are no suggestions.
-Update 9 | Plugin WordCount | Default cursor and non selectable on the wordcount value.
-Update 10 | TinyMCE Style | Light gray separator between the document and the status bar.
-Update 11 | TinyMCE Core | Added tinymce.activeEditor.getContent({format:"xml"}).
-Update 12 | In Demo Script | Implemented a script that notifies when pasting external linked images.
-Update 13 | In Demo Script | Implemented a script for uploading images into the document as base64.
-Update 14 | In Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
-
+1 | Spanish | Complete translation.
+2 | Theme | Branding banner disabled.
+3 | Theme | More font sizes available.
+4 | Theme | Font sizes in "px" instead of "pt".
+5 | Theme | Hides "px" in the font size list.
+6 | Save | Save menu item.
+7 | ContextMenu | Table properties item in the context menu.
+8 | Spellchecker | (No suggestions) item when there are no suggestions.
+9 | WordCount | Default cursor and non selectable on the wordcount value.
+10 | Skin | Light gray separator between the document and the status bar.
+11 | Skin | Added tinymce.activeEditor.getContent({format:"xml"}).
+12 | Demo Script | Implemented a script that notifies when pasting external linked images.
+13 | Demo Script | Implemented a script for uploading images into the document as base64.
+14 | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
 
 ## Spellchecker example image
 
