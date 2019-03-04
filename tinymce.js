@@ -13899,7 +13899,8 @@
             }
             editor.notificationManager.open({
               text: msg,
-              type: 'error'
+              type: 'error',
+              timeout: 7000
             });
           }
         },
