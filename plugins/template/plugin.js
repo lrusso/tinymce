@@ -296,7 +296,7 @@ var template = (function () {
           },
           {
             type: 'iframe',
-            minHeight:300,
+            minHeight:200,
             flex: 1,
             border: 1,
           }
