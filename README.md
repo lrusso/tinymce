@@ -19,17 +19,18 @@ BUGFIX | ELEMENT | DETAILS
 6 | TextColor | Prevents from missplacing the X value in the transparent color cell.
 7 | WordCount | Prevents from showing the wordcount as plural when one word written.
 8 | CodeSample | Prevents from showing a vertical scrollbar in 720p devices.
-9 | Skin | Fixes the max height possible for menus.
-10 | Skin | Prevents from showing extra large fonts in mobile devices.
-11 | Theme  | Prevents from changes in the viewport in mobile devices.
-12 | Theme  | Using px instead of pt for better mobile devices performance.
-13 | Theme  | Prevents from showing "Font Family" and "Font Size" when no content.
-14 | Core | Prevents from losing breaklines when copying and pasting a text.
-15 | Core | File/New now clears the undo/redo history.
-16 | Core | File/New now clears the dirty state.
-17 | Core | Fixed that sometimes the align left and right didn't work.
-18 | Core | Fixed that the alignment didn't work in strong tags.
-19 | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
+9 | Template | Prevents from missplacing dialog window.
+10 | Skin | Fixes the max height possible for menus.
+11 | Skin | Prevents from showing extra large fonts in mobile devices.
+12 | Theme  | Prevents from changes in the viewport in mobile devices.
+13 | Theme  | Using px instead of pt for better mobile devices performance.
+14 | Theme  | Prevents from showing "Font Family" and "Font Size" when no content.
+15 | Core | Prevents from losing breaklines when copying and pasting a text.
+16 | Core | File/New now clears the undo/redo history.
+17 | Core | File/New now clears the dirty state.
+18 | Core | Fixed that sometimes the align left and right didn't work.
+19 | Core | Fixed that the alignment didn't work in strong tags.
+20 | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
 
 UPDATE | ELEMENT | DETAILS
 :---: | :---: | --- |
