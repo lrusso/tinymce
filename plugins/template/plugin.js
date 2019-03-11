@@ -288,7 +288,7 @@ var template = (function () {
             type: "form",
             layout: "grid",
             columns: 2,
-            padding: 10,
+            padding: 5,
             items: [{
                 type: "label",
                 label: ""
