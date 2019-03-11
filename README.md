@@ -44,9 +44,10 @@ UPDATE | ELEMENT | DETAILS
 9 | WordCount | Default cursor and non selectable on the wordcount value.
 10 | Skin | Light gray separator between the document and the status bar.
 11 | Core | Added tinymce.activeEditor.getContent({format:"xml"}).
-12 | Demo Script | Implemented a script that notifies when pasting external linked images.
-13 | Demo Script | Implemented a script for uploading images into the document as base64.
-14 | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
+12 | Chart | Added my Chart plugin (https://github.com/lrusso/TinyMCEChartPlugin).
+13 | Demo Script | Implemented a script that notifies when pasting external linked images.
+14 | Demo Script | Implemented a script for uploading images into the document as base64.
+15 | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
 
 ## Spellchecker example image
 
