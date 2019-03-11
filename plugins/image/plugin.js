@@ -8,7 +8,7 @@ var image = (function () {
       return editor.settings.image_dimensions === false ? false : true;
     };
     var hasAdvTab = function (editor) {
-      return editor.settings.image_advtab === true ? true : false;
+      return true;
     };
     var getPrependUrl = function (editor) {
       return editor.getParam('image_prepend_url', '');
