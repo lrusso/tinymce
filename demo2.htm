@@ -4,14 +4,15 @@
 		<meta charset="UTF-8">
 		<title>TinyMCE 4.9.4 | Leonardo Russo</title>
 		<script src="https://lrusso.github.io/tinymce/tinymce.min.js"></script> 
+		<script src="./plugins/chart/plugin.min.js"></script> 
 		<script>
 			tinymce.init(
 							{
 							selector:"#my_TinyMCE_Document",
 							auto_focus: "my_TinyMCE_Document",
 							language: "en", // OR "es" FOR SPANISH
-							plugins: "advlist anchor autolink charmap codesample colorpicker contextmenu directionality hr image imagetools insertdatetime link lists media nonbreaking pagebreak paste print save searchreplace spellchecker table template textcolor textpattern visualblocks visualchars wordcount",
-							toolbar1: "save | spellchecker | print | cut copy paste | undo redo | template image link table | charmap",
+							plugins: "advlist anchor autolink charmap chart codesample colorpicker contextmenu directionality hr image imagetools insertdatetime link lists media nonbreaking pagebreak paste print save searchreplace spellchecker table template textcolor textpattern visualblocks visualchars wordcount",
+							toolbar1: "save | spellchecker | print | cut copy paste | undo redo | template image link table chart | charmap",
 							toolbar2: "fontselect | fontsizeselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | forecolor backcolor | bullist numlist | outdent indent | removeformat",
 
 							// GETTING ALL THE POSSIBLE EVENTS IN TINYMCE
