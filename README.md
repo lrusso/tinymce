@@ -20,7 +20,7 @@ BUGFIX | ELEMENT | DETAILS
 7 | WordCount | Prevents from showing the wordcount as plural when one word written.
 8 | CodeSample | Prevents from showing a vertical scrollbar in 720p devices.
 9 | Template | Prevents from missplacing dialog window.
-10 | Print | Prevents from showing the image corner handles when selected while printing.
+10 | Skin | Prevents from printing the corner handles when a image or table is selected.
 11 | Skin | Fixes the max height possible for menus.
 12 | Skin | Prevents from showing extra large fonts in mobile devices.
 13 | Theme  | Prevents from changes in the viewport in mobile devices.
