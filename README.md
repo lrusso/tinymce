@@ -47,7 +47,7 @@ UPDATE | ELEMENT | DETAILS
 10 | Skin | Light gray separator between the document and the status bar.
 11 | Core | Added tinymce.activeEditor.getContent({format:"xml"}).
 12 | Chart | Added my Chart plugin (https://github.com/lrusso/TinyMCEChartPlugin).
-13 | Spreadsheet | Added my Spreadsheet Plugin (https://github.com/lrusso/TinyMCESpreadsheet)
+13 | Spreadsheet | Added my Spreadsheet Plugin (https://github.com/lrusso/TinyMCESpreadsheet).
 14 | Demo Script | Implemented a script that notifies when pasting external linked images.
 15 | Demo Script | Implemented a script for uploading images into the document as base64.
 16 | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
