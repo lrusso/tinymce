@@ -26,6 +26,7 @@ BUGFIX | ELEMENT | DETAILS
 13 | Theme  | Prevents from changes in the viewport in mobile devices.
 14 | Theme  | Using px instead of pt for better mobile devices performance.
 15 | Theme  | Prevents from showing "Font Family" and "Font Size" when no content.
+15 | Theme  | Prevents from showing templates with table cells with a 0px height when no content.
 16 | Core | Prevents from losing breaklines when copying and pasting a text.
 17 | Core | File/New now clears the undo/redo history.
 18 | Core | File/New now clears the dirty state.
