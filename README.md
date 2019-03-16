@@ -26,13 +26,13 @@ BUGFIX | ELEMENT | DETAILS
 13 | Theme  | Prevents from changes in the viewport in mobile devices.
 14 | Theme  | Using px instead of pt for better mobile devices performance.
 15 | Theme  | Prevents from showing "Font Family" and "Font Size" when no content.
-15 | Theme  | Prevents from showing templates with table cells with a 0px height when no content.
-16 | Core | Prevents from losing breaklines when copying and pasting a text.
-17 | Core | File/New now clears the undo/redo history.
-18 | Core | File/New now clears the dirty state.
-19 | Core | Fixed that sometimes the align left and right didn't work.
-20 | Core | Fixed that the alignment didn't work in strong tags.
-21 | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
+16 | Theme  | Prevents from showing templates with table cells with a 0px height when no content.
+17 | Core | Prevents from losing breaklines when copying and pasting a text.
+18 | Core | File/New now clears the undo/redo history.
+19 | Core | File/New now clears the dirty state.
+20 | Core | Fixed that sometimes the align left and right didn't work.
+21 | Core | Fixed that the alignment didn't work in strong tags.
+22 | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
 
 UPDATE | ELEMENT | DETAILS
 :---: | :---: | --- |
