@@ -57,7 +57,7 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 					else
 					{
 					var pattern3 = /[0-9-][{0,1}[\d]*[\.][\.]{0,1}[\d]+/gm;
-					var match3 = pattern3.exec(cellValue)
+					var match3 = pattern3.exec(cellValue);
 					var cellValueNumber = "0";
 					if (match3[0]!=null)
 						{
