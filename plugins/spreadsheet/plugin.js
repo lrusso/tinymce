@@ -56,22 +56,17 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 					}
 					else
 					{
-					cellValue = cellValue.trim();
-					var cellValueNumber = "";
-					var splitter = cellValue.split(" ");
-					if (isNumber(splitter[0])==true)
+					var pattern3 = /[0-9-][{0,1}[\d]*[\.][\.]{0,1}[\d]+/gm;
+					var match3 = pattern3.exec(cellValue)
+					var cellValueNumber = "0";
+					if (match3[0]!=null)
 						{
-						cellValueNumber = splitter[0];
-						}
-					else if (isNumber(splitter[1])==true)
-						{
-						cellValueNumber = splitter[1];
-						}
-					if (cellValue=="")
-						{
-						cellValueNumber = 0;
+						var cellValueNumber = match3[0];
+						cellValueNumber = replaceAll(cellValueNumber,",","");
+						cellValueNumber = parseFloat(cellValueNumber).toFixed(2);
 						}
 					cellValueNumber = "(" + cellValueNumber + ")";
+
 					inputtedCalcTemp = replaceAll(inputtedCalcTemp,location,cellValueNumber);
 					}
 				}
@@ -82,9 +77,9 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 
 		if (inputtedCalcTemp!="")
 			{
-			if (checkingErrors(inputtedCalcTemp)==false)
+			try
 				{
-				try
+				if (inputtedCalcTemp.toLowerCase().indexOf("alert(")==-1 && inputtedCalcTemp.toLowerCase().indexOf("document.")==-1 && inputtedCalcTemp.toLowerCase().indexOf("window.")==-1)
 					{
 					var result = eval(inputtedCalcTemp);
 					if (typeof result === "undefined")
@@ -99,17 +94,11 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 						else
 						{
 						result = String(result);
-						var splitter = result.split(" ");
-						var resultNumber = "";
-						var resultNumberFinal = "";
-						if (isNumber(splitter[0])==true)
-							{
-							resultNumber = splitter[0];
-							}
-						else if (isNumber(splitter[1])==true)
-							{
-							resultNumber = splitter[1];
-							}
+
+						var pattern3 = /[0-9-][{0,1}[\d]*[\.][\.]{0,1}[\d]+/gm;
+						var match3 = pattern3.exec(result);
+						var resultNumber = match3[0];
+
 						resultNumberFinal = parseFloat(resultNumber).toFixed(decimalsUsed);
 
 						if (isNaN(resultNumberFinal)===false)
@@ -138,7 +127,7 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 							}
 						}
 					}
-					catch(err)
+					else
 					{
 					parentElement.className = "spreadsheetTinyMCE" + decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc);
 					parentElement.innerHTML = "Error";
@@ -148,7 +137,7 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 						}
 					}
 				}
-				else
+				catch(err)
 				{
 				parentElement.className = "spreadsheetTinyMCE" + decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc);
 				parentElement.innerHTML = "Error";
@@ -231,40 +220,6 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 	function formatNumber (num)
 		{
 		return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
-		}
-
-	function checkingErrors(input)
-		{
-		for(var i = 0; i < input.length; i++)
-			{
-			var character = input.charAt(i);
-			if (character!="0" &&
-				character!="1" &&
-				character!="2" &&
-				character!="3" &&
-				character!="4" &&
-				character!="5" &&
-				character!="6" &&
-				character!="7" &&
-				character!="8" &&
-				character!="9" &&
-				character!="." &&
-				character!="+" &&
-				character!="-" &&
-				character!="*" &&
-				character!="/" &&
-				character!="%" &&
-				character!="(" &&
-				character!=")" &&
-				character!="$" &&
-				character!=" " &&
-				character!="\""
-				)
-				{
-				return true;
-				}
-			}
-		return false;
 		}
 
 	function updateTable(revalidate)
