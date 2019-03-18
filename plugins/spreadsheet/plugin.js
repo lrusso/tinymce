@@ -100,7 +100,7 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 					var result = eval(inputtedCalcTemp);
 					if (typeof result === "undefined")
 						{
-						showError(decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
+						updateCell("Error", decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
 						}
 						else
 						{
@@ -119,35 +119,22 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 								}
 							result = replaceAll(result,resultNumber,resultNumberFinal);
 
-							parentElement.className = "spreadsheetTinyMCE" + decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc);
-
- 							var latestChildNode = parentElement;
-							while (latestChildNode.lastChild!=null)
-								{
-								latestChildNode = latestChildNode.lastChild;
-								}
-							try{latestChildNode.innerHTML = result;}catch(err){}
-							try{latestChildNode.textContent = result;}catch(err){}
-
-							if (setDirty==true)
-								{
-								editor.insertContent("");
-								}
+							updateCell(result, decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
 							}
 							else
 							{
-							showError(decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
+							updateCell("Error", decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
 							}
 						}
 					}
 					else
 					{
-					showError(decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
+					updateCell("Error", decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
 					}
 				}
 				catch(err)
 				{
-				showError(decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
+				updateCell("Error", decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc),parentElement,setDirty);
 				}
 			}
 			else
@@ -230,17 +217,15 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 		return str.join(".");
 		}
 
-	function showError(className,parentElement,setDirty)
+	function updateCell(value, className,parentElement,setDirty)
 		{
 		parentElement.className = "spreadsheetTinyMCE" + className;
 
 		var latestChildNode = parentElement;
-		while (latestChildNode.lastChild!=null)
-			{
-			latestChildNode = latestChildNode.lastChild;
-			}
-		try{latestChildNode.innerHTML = "Error";}catch(err){}
-		try{latestChildNode.textContent = "Error";}catch(err){}
+		while (latestChildNode.firstChild!=null){latestChildNode = latestChildNode.firstChild;}
+		if (latestChildNode.nodeName=="BR"){latestChildNode = parentElement;}
+		try{latestChildNode.innerHTML = value;}catch(err){}
+		try{latestChildNode.textContent = value;}catch(err){}
 
 		if (setDirty==true)
 			{
