@@ -38,20 +38,19 @@ UPDATE | ELEMENT | DETAILS
 :---: | :---: | --- |
 1 | Spanish | Complete translation.
 2 | Theme | Branding banner disabled.
-3 | Theme | More font sizes available.
-4 | Theme | Font sizes in "px" instead of "pt".
-5 | Theme | Hides "px" in the font size list.
-6 | Save | Save menu item.
-7 | ContextMenu | Table properties item in the context menu.
-8 | Spellchecker | (No suggestions) item when there are no suggestions.
-9 | WordCount | Default cursor and non selectable on the wordcount value.
-10 | Skin | Light gray separator between the document and the status bar.
-11 | Core | Added tinymce.activeEditor.getContent({format:"xml"}).
-12 | Chart | Added my Chart plugin (https://github.com/lrusso/TinyMCEChartPlugin).
-13 | Spreadsheet | Added my Spreadsheet Plugin (https://github.com/lrusso/TinyMCESpreadsheetPlugin).
-14 | Demo Script | Implemented a script that notifies when pasting external linked images.
-15 | Demo Script | Implemented a script for uploading images into the document as base64.
-16 | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
+3 | Theme | Font sizes in "px" instead of "pt".
+4 | Theme | Hides "px" in the font size list.
+5 | Save | Save menu item.
+6 | ContextMenu | Table properties item in the context menu.
+7 | Spellchecker | (No suggestions) item when there are no suggestions.
+8 | WordCount | Default cursor and non selectable on the wordcount value.
+9 | Skin | Light gray separator between the document and the status bar.
+10 | Core | Added tinymce.activeEditor.getContent({format:"xml"}).
+11 | Chart | Added my Chart plugin (https://github.com/lrusso/TinyMCEChartPlugin).
+12 | Spreadsheet | Added my Spreadsheet Plugin (https://github.com/lrusso/TinyMCESpreadsheetPlugin).
+13 | Demo Script | Implemented a script that notifies when pasting external linked images.
+14 | Demo Script | Implemented a script for uploading images into the document as base64.
+15 | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
 
 ## Spellchecker example image
 
