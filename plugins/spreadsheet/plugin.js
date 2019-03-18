@@ -115,12 +115,19 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 							{
 							if (thousandsSeparator=="1")
 								{
-								resultNumberFinal = formatNumber(resultNumberFinal,decimalsUsed);
+								resultNumberFinal = formatNumber(resultNumberFinal);
 								}
 							result = replaceAll(result,resultNumber,resultNumberFinal);
 
 							parentElement.className = "spreadsheetTinyMCE" + decimalsUsed + "" +  thousandsSeparator + encodeURIComponent(inputtedCalc);
-							parentElement.innerHTML = result;
+
+ 							var latestChildNode = parentElement;
+							while (latestChildNode.lastChild!=null)
+								{
+								latestChildNode = latestChildNode.lastChild;
+								}
+							try{latestChildNode.innerHTML = result;}catch(err){}
+							try{latestChildNode.textContent = result;}catch(err){}
 
 							if (setDirty==true)
 								{
@@ -213,24 +220,28 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 		return str.replace(new RegExp(find, "g"), replace);
 		}
 
-	function formatNumber(num,decimalsUsed)
+	function formatNumber (num)
 		{
-		num = num.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-		if (decimalsUsed>0)
+		var str = num.toString().split(".");
+		if (str[0].length >= 3)
 			{
-			var pattern = /[.].*/g;
-			var match = pattern.exec(num);
-			num = replaceAll(num,match[0],match[0].replace(/\s*,\s*|\s+,/g, ""));
+			str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, "$1,");
 			}
-
-		return num;
+		return str.join(".");
 		}
 
 	function showError(className,parentElement,setDirty)
 		{
 		parentElement.className = "spreadsheetTinyMCE" + className;
-		parentElement.innerHTML = "Error";
+
+		var latestChildNode = parentElement;
+		while (latestChildNode.lastChild!=null)
+			{
+			latestChildNode = latestChildNode.lastChild;
+			}
+		try{latestChildNode.innerHTML = "Error";}catch(err){}
+		try{latestChildNode.textContent = "Error";}catch(err){}
+
 		if (setDirty==true)
 			{
 			editor.insertContent("");
@@ -348,7 +359,7 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 		{
 		var elementStoredNode = editor.selection.getNode();
 		var elementStoredNodeOffsetParent = editor.selection.getNode().offsetParent;
-		var elementStoredClassName = elementStoredNode.className;
+		var elementStoredClassName = "";
 		var elementStoredNodeName = elementStoredNode.nodeName;
 		var decimalsUsed = "2";
 		var thousandsSeparator = false;
@@ -358,12 +369,14 @@ tinymce.PluginManager.add("spreadsheet", function(editor, url)
 		if (elementStoredNodeName=="TD")
 			{
 			tableLocated = true
+			elementStoredClassName = elementStoredNode.className;
 			}
 		else if(elementStoredNodeOffsetParent!=null)
 			{
 			if (elementStoredNodeOffsetParent.nodeName=="TD")
 				{
 				tableLocated = true;
+				elementStoredClassName = elementStoredNodeOffsetParent.className;
 				}
 			}
 
