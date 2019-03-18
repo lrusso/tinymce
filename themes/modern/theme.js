@@ -7257,7 +7257,7 @@ var modern = (function () {
       };
     };
     var getFontSizeItems = function (editor) {
-      var defaultFontsizeFormats = '8px 9px 10px 11px 12px 13px 14px 15px 16px 17px 18px 19px 20px 21px 22px 23px 24px 25px 26px 27px 28px 29px 30px 31px 32px 33px 34px 35px 36px 37px 38px 39px 40px 41px 42px';
+      var defaultFontsizeFormats = '8px 10px 12px 14px 16px 18px 24px 36px';
       var fontsizeFormats = editor.settings.fontsize_formats || defaultFontsizeFormats;
       return global$2.map(fontsizeFormats.split(' '), function (item) {
         var text = item, value = item;
