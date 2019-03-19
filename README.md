@@ -9,7 +9,7 @@ AJAX saving example | https://lrusso.github.io/tinymce/demo2.htm
 
 ## Changelog
 
-&nbsp; | ELEMENT | DETAILS
+TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
 Fixed | Spellchecker | Hides the suggestions when the spellchecker is disabled.
 Fixed | Spellchecker | Prevents to move arround the document while spellchecking.
