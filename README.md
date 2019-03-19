@@ -9,48 +9,45 @@ AJAX saving example | https://lrusso.github.io/tinymce/demo2.htm
 
 ## Changelog
 
-BUGFIX | ELEMENT | DETAILS
+TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
-1 | Spellchecker | Hides the suggestions when the spellchecker is disabled.
-2 | Spellchecker | Prevents to move arround the document while spellchecking.
-3 | Spellchecker | Prevents words remains marked when the user changes the language.
-4 | Spellchecker | Prevents from making changes in a document thats starts with a table.
-5 | Table | Prevents a table width to change when adding a column without width data.
-6 | TextColor | Prevents from missplacing the X value in the transparent color cell.
-7 | WordCount | Prevents from showing the wordcount as plural when one word written.
-8 | CodeSample | Prevents from showing a vertical scrollbar in 720p devices.
-9 | Template | Prevents from missplacing dialog window.
-10 | Skin | Prevents from printing the corner handles when a image or table is selected.
-11 | Skin | Fixes the max height possible for menus.
-12 | Skin | Prevents from showing extra large fonts in mobile devices.
-13 | Theme  | Prevents from changes in the viewport in mobile devices.
-14 | Theme  | Using px instead of pt for better mobile devices performance.
-15 | Theme  | Prevents from showing "Font Family" and "Font Size" when no content.
-16 | Theme  | Prevents from showing templates with table cells with a 0px height when no content.
-17 | Core | Prevents from losing breaklines when copying and pasting a text.
-18 | Core | File/New now clears the undo/redo history.
-19 | Core | File/New now clears the dirty state.
-20 | Core | Fixed that sometimes the align left and right didn't work.
-21 | Core | Fixed that the alignment didn't work in strong tags.
-22 | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
-
-UPDATE | ELEMENT | DETAILS
-:---: | :---: | --- |
-1 | Spanish | Complete translation.
-2 | Theme | Branding banner disabled.
-3 | Theme | Font sizes in "px" instead of "pt".
-4 | Theme | Hides "px" in the font size list.
-5 | Save | Save menu item.
-6 | ContextMenu | Table properties item in the context menu.
-7 | Spellchecker | (No suggestions) item when there are no suggestions.
-8 | WordCount | Default cursor and non selectable on the wordcount value.
-9 | Skin | Light gray separator between the document and the status bar.
-10 | Core | Added tinymce.activeEditor.getContent({format:"xml"}).
-11 | Chart | Added my Chart plugin (https://github.com/lrusso/TinyMCEChartPlugin).
-12 | Spreadsheet | Added my Spreadsheet Plugin (https://github.com/lrusso/TinyMCESpreadsheetPlugin).
-13 | Demo Script | Implemented a script that notifies when pasting external linked images.
-14 | Demo Script | Implemented a script for uploading images into the document as base64.
-15 | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
+Fixed | Spellchecker | Hides the suggestions when the spellchecker is disabled.
+Fixed | Spellchecker | Prevents to move arround the document while spellchecking.
+Fixed | Spellchecker | Prevents words remains marked when the user changes the language.
+Fixed | Spellchecker | Prevents from making changes in a document thats starts with a table.
+Fixed | Table | Prevents a table width to change when adding a column without width data.
+Fixed | TextColor | Prevents from missplacing the X value in the transparent color cell.
+Fixed | WordCount | Prevents from showing the wordcount as plural when one word written.
+Fixed | CodeSample | Prevents from showing a vertical scrollbar in 720p devices.
+Fixed | Template | Prevents from missplacing dialog window.
+Fixed | Skin | Prevents from printing the corner handles when a image or table is selected.
+Fixed | Skin | Fixes the max height possible for menus.
+Fixed | Skin | Prevents from showing extra large fonts in mobile devices.
+Fixed | Theme  | Prevents from changes in the viewport in mobile devices.
+Fixed | Theme  | Using px instead of pt for better mobile devices performance.
+Fixed | Theme  | Prevents from showing "Font Family" and "Font Size" when no content.
+Fixed | Theme  | Prevents from showing templates with table cells with a 0px height when no content.
+Fixed | Core | Prevents from losing breaklines when copying and pasting a text.
+Fixed | Core | File/New now clears the undo/redo history.
+Fixed | Core | File/New now clears the dirty state.
+Fixed | Core | Fixed that sometimes the align left and right didn't work.
+Fixed | Core | Fixed that the alignment didn't work in strong tags.
+Fixed | Core | Fixed tables with a wrong initial scroll top position in mobile devices.
+Updated | Spanish | Complete translation.
+Updated | Theme | Branding banner disabled.
+Updated | Theme | Font sizes in "px" instead of "pt".
+Updated | Theme | Hides "px" in the font size list.
+Updated | Save | Save menu item.
+Updated | ContextMenu | Table properties item in the context menu.
+Updated | Spellchecker | (No suggestions) item when there are no suggestions.
+Updated | WordCount | Default cursor and non selectable on the wordcount value.
+Updated | Skin | Light gray separator between the document and the status bar.
+Updated | Core | Added tinymce.activeEditor.getContent({format:"xml"}).
+Updated | Chart | Added my Chart plugin (https://github.com/lrusso/TinyMCEChartPlugin).
+Updated | Spreadsheet | Added my Spreadsheet Plugin (https://github.com/lrusso/TinyMCESpreadsheetPlugin).
+Updated | Demo Script | Implemented a script that notifies when pasting external linked images.
+Updated | Demo Script | Implemented a script for uploading images into the document as base64.
+Updated | Demo Script | Implemented a script for adding spaces (tabs) when the Tab key is down.
 
 ## Spellchecker example image
 
