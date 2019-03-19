@@ -1,13 +1,13 @@
-## TinyMCE 4.9.4 - Personal version with several bugfixes and updates.
+## TinyMCE 4.9.4 - Personal version with several bugfixes and updates
 
-## DEMOS:
+## Demos
 
 DESCRIPTION | URL
 :---: | --- |
 Form saving example | https://lrusso.github.io/tinymce/demo1.htm
 AJAX saving example | https://lrusso.github.io/tinymce/demo2.htm
 
-## Changelog:
+## Changelog
 
 BUGFIX | ELEMENT | DETAILS
 :---: | :---: | --- |
