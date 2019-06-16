@@ -1181,7 +1181,7 @@ var charmap = (function () {
         }
       };
       win = editor.windowManager.open({
-        title: 'Special character',
+        title: 'Insert symbol',
         spacing: 10,
         padding: 10,
         items: [
@@ -1207,12 +1207,12 @@ var charmap = (function () {
     var register$1 = function (editor) {
       editor.addButton('charmap', {
         icon: 'charmap',
-        tooltip: 'Special character',
+        tooltip: 'Insert symbol',
         cmd: 'mceShowCharmap'
       });
       editor.addMenuItem('charmap', {
         icon: 'charmap',
-        text: 'Special character',
+        text: 'Insert symbol',
         cmd: 'mceShowCharmap',
         context: 'insert'
       });
