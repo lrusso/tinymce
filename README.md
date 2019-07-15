@@ -12,6 +12,7 @@ AJAX saving example | https://lrusso.github.io/tinyMCE/demo2.htm
 TYPE | ELEMENT | DETAILS
 :---: | :---: | --- |
 Fixed | Spellchecker | Hides the suggestions when the spellchecker is disabled.
+Fixed | Spellchecker | Prevents from removing the word instead of replacing it.
 Fixed | Spellchecker | Prevents to move arround the document while spellchecking.
 Fixed | Spellchecker | Prevents words remains marked when the user changes the language.
 Fixed | Spellchecker | Prevents from making changes in a document thats starts with a table.
